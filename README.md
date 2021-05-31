@@ -71,7 +71,7 @@ Test Report after running
 
 + Currently, I run test scripts by TestNG so the report is stored in "test-output/emailable-report.html". Please run it and open it in the browser to view the report  
 + If more time, I will apply plugin 'Report Portal' or 'Allure Report' for more visual UI
-+ When running API Suite, I found 1 bug by automation script. Please refer the bug details into 'logbug.txt' for more information.
++ Having 1 test script failed because bug when running API Suite, this bug found by automation script. Please refer the bug details into 'logbug.txt' for more information.
 
 Data Driven 
 -----------------

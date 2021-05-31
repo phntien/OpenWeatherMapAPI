@@ -1,0 +1,32 @@
+{
+  "TC_API_0001": {
+    "xlFilePath": "testdata/api/weather/TC_API_0001_0002.xlsx",
+    "sheetName": "ValidData",
+    "specificRows": ""
+  },
+  "TC_API_0002": {
+    "xlFilePath": "testdata/api/weather/TC_API_0001_0002.xlsx",
+    "sheetName": "InvalidData",
+    "specificRows": ""
+  },
+  "TC_API_0003": {
+    "xlFilePath": "testdata/api/weather/TC_API_0003_0004.xlsx",
+    "sheetName": "ValidData",
+    "specificRows": ""
+  },
+  "TC_API_0004": {
+    "xlFilePath": "testdata/api/weather/TC_API_0003_0004.xlsx",
+    "sheetName": "InvalidData",
+    "specificRows": ""
+  },
+  "TC_API_0005": {
+    "xlFilePath": "testdata/api/weather/TC_API_0005_0006.xlsx",
+    "sheetName": "ValidData",
+    "specificRows": ""
+  },
+  "TC_API_0006": {
+    "xlFilePath": "testdata/api/weather/TC_API_0005_0006.xlsx",
+    "sheetName": "InvalidData",
+    "specificRows": ""
+  }
+}

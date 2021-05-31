@@ -1,0 +1,19 @@
+Summary Bug: API response code and body still return successfully in case entering with empty City name, invalid State Code, and invalid Country Code
+
+Precondition:
++ Postman tool is installed
+
+Data Test:
++ City Name is empty
++ State Code is invalid ex: USddd
++ Country Code is invalid ex: USddd
+
+Steps:
+0. Using postman
+1. Run Get method with parameter as below: api.openweathermap.org/data/2.5/weather?q=,USddd,USddd&appid=f4282cd01e76cbac40f989bb76c811c3
+2. Observe the response status and response body return
+
+Actual Results: API response code and body still return successfully in case entering with empty City name, invalid State Code, and invalid Country Code
+
+
+Expected Results: API should return page not found with 404 code instead 200 code when empty city name, invalid state code, and country code

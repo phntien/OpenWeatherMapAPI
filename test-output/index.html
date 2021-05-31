@@ -1,0 +1,2043 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">2 suites, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-All_API_Test_Suite">
+              <span class="suite-name border-failed">All API Test Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-All_API_Test_Suite">
+                    <span>TestSuiteAPI.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-All_API_Test_Suite">
+                    <span class="test-stats">3 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-All_API_Test_Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-All_API_Test_Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-All_API_Test_Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-All_API_Test_Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-All_API_Test_Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">32 methods, 1 failed,   31 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-All_API_Test_Suite" class="hide-methods failed suite-All_API_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-All_API_Test_Suite -->
+                      <a href="#" panel-name="suite-All_API_Test_Suite" class="show-methods failed suite-All_API_Test_Suite"> (show)</a> <!-- show-methods failed suite-All_API_Test_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-All_API_Test_Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_API_Test_Suite" title="com.currentweather.api.TC_API_0004_Get_current_weather_data_with_INVALID_CityName_and_StateCode" hash-for-method="TC_API_0004_Get_current_weather_data_with_INVALID_CityName_and_StateCode({InvalidStateCode=US,US, InvalidCityName=})">TC_API_0004_Get_current_weather_data_with_INVALID_CityName_and_StateCode({InvalidStateCode=US,US, InvalidCityName=})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-All_API_Test_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-All_API_Test_Suite" class="hide-methods passed suite-All_API_Test_Suite"> (hide)</a> <!-- hide-methods passed suite-All_API_Test_Suite -->
+                      <a href="#" panel-name="suite-All_API_Test_Suite" class="show-methods passed suite-All_API_Test_Suite"> (show)</a> <!-- show-methods passed suite-All_API_Test_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-All_API_Test_Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_API_Test_Suite" title="com.currentweather.api.TC_API_0001_Get_current_weather_data_with_VALID_CityName" hash-for-method="TC_API_0001_Get_current_weather_data_with_VALID_CityName({ExpectedCOD=200, ExpectedLon=13.2396, ExpectedLat=56.9989, ExpectedID=2704008, CityName=Hyltebruk, ...)">TC_API_0001_Get_current_weather_data_with_VALID_CityName({ExpectedCOD=200, ExpectedLon=13.2396, ExpectedLat=56.9989, ExpectedID=2704008, CityName=Hyltebruk, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_API_Test_Suite" title="com.currentweather.api.TC_API_0001_Get_current_weather_data_with_VALID_CityName" hash-for-method="TC_API_0001_Get_current_weather_data_with_VALID_CityName({ExpectedCOD=200, ExpectedLon=-76.5074, ExpectedLat=38.3004, ExpectedID=4350049, CityName=California...)">TC_API_0001_Get_current_weather_data_with_VALID_CityName({ExpectedCOD=200, ExpectedLon=-76.5074, ExpectedLat=38.3004, ExpectedID=4350049, CityName=California...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_API_Test_Suite" title="com.currentweather.api.TC_API_0001_Get_current_weather_data_with_VALID_CityName" hash-for-method="TC_API_0001_Get_current_weather_data_with_VALID_CityName({ExpectedCOD=200, ExpectedLon=45.0675, ExpectedLat=37.6747, ExpectedID=18557, CityName=Qarālar-e Mīr...)">TC_API_0001_Get_current_weather_data_with_VALID_CityName({ExpectedCOD=200, ExpectedLon=45.0675, ExpectedLat=37.6747, ExpectedID=18557, CityName=Qarālar-e Mīr...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_API_Test_Suite" title="com.currentweather.api.TC_API_0001_Get_current_weather_data_with_VALID_CityName" hash-for-method="TC_API_0001_Get_current_weather_data_with_VALID_CityName({ExpectedCOD=200, ExpectedLon=-0.1257, ExpectedLat=51.5085, ExpectedID=2643743, CityName=London, Exp...)">TC_API_0001_Get_current_weather_data_with_VALID_CityName({ExpectedCOD=200, ExpectedLon=-0.1257, ExpectedLat=51.5085, ExpectedID=2643743, CityName=London, Exp...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_API_Test_Suite" title="com.currentweather.api.TC_API_0002_Get_current_weather_data_with_INVALID_CityName" hash-for-method="TC_API_0002_Get_current_weather_data_with_INVALID_CityName({InvalidCityName=testingforlongcharacter#@$%@#$%@#$%})">TC_API_0002_Get_current_weather_data_with_INVALID_CityName({InvalidCityName=testingforlongcharacter#@$%@#$%@#$%})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_API_Test_Suite" title="com.currentweather.api.TC_API_0002_Get_current_weather_data_with_INVALID_CityName" hash-for-method="TC_API_0002_Get_current_weather_data_with_INVALID_CityName({InvalidCityName=NULL})">TC_API_0002_Get_current_weather_data_with_INVALID_CityName({InvalidCityName=NULL})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_API_Test_Suite" title="com.currentweather.api.TC_API_0002_Get_current_weather_data_with_INVALID_CityName" hash-for-method="TC_API_0002_Get_current_weather_data_with_INVALID_CityName({InvalidCityName=London+US})">TC_API_0002_Get_current_weather_data_with_INVALID_CityName({InvalidCityName=London+US})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_API_Test_Suite" title="com.currentweather.api.TC_API_0002_Get_current_weather_data_with_INVALID_CityName" hash-for-method="TC_API_0002_Get_current_weather_data_with_INVALID_CityName({InvalidCityName=2342345.0})">TC_API_0002_Get_current_weather_data_with_INVALID_CityName({InvalidCityName=2342345.0})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_API_Test_Suite" title="com.currentweather.api.TC_API_0002_Get_current_weather_data_with_INVALID_CityName" hash-for-method="TC_API_0002_Get_current_weather_data_with_INVALID_CityName({InvalidCityName=Lodon@gmail.com})">TC_API_0002_Get_current_weather_data_with_INVALID_CityName({InvalidCityName=Lodon@gmail.com})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_API_Test_Suite" title="com.currentweather.api.TC_API_0002_Get_current_weather_data_with_INVALID_CityName" hash-for-method="TC_API_0002_Get_current_weather_data_with_INVALID_CityName({InvalidCityName=12#!@$})">TC_API_0002_Get_current_weather_data_with_INVALID_CityName({InvalidCityName=12#!@$})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_API_Test_Suite" title="com.currentweather.api.TC_API_0003_Get_current_weather_data_with_VALID_CityName_and_StateCode" hash-for-method="TC_API_0003_Get_current_weather_data_with_VALID_CityName_and_StateCode({ExpectedCOD=200, ExpectedLon=151.6667, ExpectedLat=-32.95, StateCode=, ExpectedID=2171766, CityName...)">TC_API_0003_Get_current_weather_data_with_VALID_CityName_and_StateCode({ExpectedCOD=200, ExpectedLon=151.6667, ExpectedLat=-32.95, StateCode=, ExpectedID=2171766, CityName...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_API_Test_Suite" title="com.currentweather.api.TC_API_0003_Get_current_weather_data_with_VALID_CityName_and_StateCode" hash-for-method="TC_API_0003_Get_current_weather_data_with_VALID_CityName_and_StateCode({ExpectedCOD=200, ExpectedLon=45.0675, ExpectedLat=37.6747, StateCode=IR, ExpectedID=18557, CityName...)">TC_API_0003_Get_current_weather_data_with_VALID_CityName_and_StateCode({ExpectedCOD=200, ExpectedLon=45.0675, ExpectedLat=37.6747, StateCode=IR, ExpectedID=18557, CityName...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_API_Test_Suite" title="com.currentweather.api.TC_API_0003_Get_current_weather_data_with_VALID_CityName_and_StateCode" hash-for-method="TC_API_0003_Get_current_weather_data_with_VALID_CityName_and_StateCode({ExpectedCOD=200, ExpectedLon=-76.5074, ExpectedLat=38.3004, StateCode=US, ExpectedID=4350049, CityN...)">TC_API_0003_Get_current_weather_data_with_VALID_CityName_and_StateCode({ExpectedCOD=200, ExpectedLon=-76.5074, ExpectedLat=38.3004, StateCode=US, ExpectedID=4350049, CityN...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_API_Test_Suite" title="com.currentweather.api.TC_API_0003_Get_current_weather_data_with_VALID_CityName_and_StateCode" hash-for-method="TC_API_0003_Get_current_weather_data_with_VALID_CityName_and_StateCode({ExpectedCOD=200, ExpectedLon=-0.1257, ExpectedLat=51.5085, StateCode=UK, ExpectedID=2643743, CityNa...)">TC_API_0003_Get_current_weather_data_with_VALID_CityName_and_StateCode({ExpectedCOD=200, ExpectedLon=-0.1257, ExpectedLat=51.5085, StateCode=UK, ExpectedID=2643743, CityNa...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_API_Test_Suite" title="com.currentweather.api.TC_API_0003_Get_current_weather_data_with_VALID_CityName_and_StateCode" hash-for-method="TC_API_0003_Get_current_weather_data_with_VALID_CityName_and_StateCode({ExpectedCOD=200, ExpectedLon=-83.4483, ExpectedLat=39.8865, StateCode=US, ExpectedID=4517009, CityN...)">TC_API_0003_Get_current_weather_data_with_VALID_CityName_and_StateCode({ExpectedCOD=200, ExpectedLon=-83.4483, ExpectedLat=39.8865, StateCode=US, ExpectedID=4517009, CityN...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_API_Test_Suite" title="com.currentweather.api.TC_API_0004_Get_current_weather_data_with_INVALID_CityName_and_StateCode" hash-for-method="TC_API_0004_Get_current_weather_data_with_INVALID_CityName_and_StateCode({InvalidStateCode=UKK, InvalidCityName=London+US})">TC_API_0004_Get_current_weather_data_with_INVALID_CityName_and_StateCode({InvalidStateCode=UKK, InvalidCityName=London+US})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_API_Test_Suite" title="com.currentweather.api.TC_API_0004_Get_current_weather_data_with_INVALID_CityName_and_StateCode" hash-for-method="TC_API_0004_Get_current_weather_data_with_INVALID_CityName_and_StateCode({InvalidStateCode=, InvalidCityName=California@#$%@#$%})">TC_API_0004_Get_current_weather_data_with_INVALID_CityName_and_StateCode({InvalidStateCode=, InvalidCityName=California@#$%@#$%})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_API_Test_Suite" title="com.currentweather.api.TC_API_0004_Get_current_weather_data_with_INVALID_CityName_and_StateCode" hash-for-method="TC_API_0004_Get_current_weather_data_with_INVALID_CityName_and_StateCode({InvalidStateCode=USS, InvalidCityName=FASDFAS})">TC_API_0004_Get_current_weather_data_with_INVALID_CityName_and_StateCode({InvalidStateCode=USS, InvalidCityName=FASDFAS})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_API_Test_Suite" title="com.currentweather.api.TC_API_0004_Get_current_weather_data_with_INVALID_CityName_and_StateCode" hash-for-method="TC_API_0004_Get_current_weather_data_with_INVALID_CityName_and_StateCode({InvalidStateCode=IR, InvalidCityName=Qarālar-e Mīrzā Ḩoseynqolīa!@#})">TC_API_0004_Get_current_weather_data_with_INVALID_CityName_and_StateCode({InvalidStateCode=IR, InvalidCityName=Qarālar-e Mīrzā Ḩoseynqolīa!@#})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_API_Test_Suite" title="com.currentweather.api.TC_API_0005_Get_current_weather_data_with_VALID_CityName_and_StateCode_and_CountryCode" hash-for-method="TC_API_0005_Get_current_weather_data_with_VALID_CityName_and_StateCode_and_CountryCode({ExpectedCOD=200, ExpectedLon=45.0675, ExpectedLat=37.6747, StateCode=, ExpectedID=18557, CityName=Q...)">TC_API_0005_Get_current_weather_data_with_VALID_CityName_and_StateCode_and_CountryCode({ExpectedCOD=200, ExpectedLon=45.0675, ExpectedLat=37.6747, StateCode=, ExpectedID=18557, CityName=Q...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_API_Test_Suite" title="com.currentweather.api.TC_API_0005_Get_current_weather_data_with_VALID_CityName_and_StateCode_and_CountryCode" hash-for-method="TC_API_0005_Get_current_weather_data_with_VALID_CityName_and_StateCode_and_CountryCode({ExpectedCOD=200, ExpectedLon=-75.9497, ExpectedLat=39.5668, StateCode=US, ExpectedID=4350685, CityN...)">TC_API_0005_Get_current_weather_data_with_VALID_CityName_and_StateCode_and_CountryCode({ExpectedCOD=200, ExpectedLon=-75.9497, ExpectedLat=39.5668, StateCode=US, ExpectedID=4350685, CityN...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_API_Test_Suite" title="com.currentweather.api.TC_API_0005_Get_current_weather_data_with_VALID_CityName_and_StateCode_and_CountryCode" hash-for-method="TC_API_0005_Get_current_weather_data_with_VALID_CityName_and_StateCode_and_CountryCode({ExpectedCOD=200, ExpectedLon=-77.073, ExpectedLat=38.6271, StateCode=, ExpectedID=4349727, CityName...)">TC_API_0005_Get_current_weather_data_with_VALID_CityName_and_StateCode_and_CountryCode({ExpectedCOD=200, ExpectedLon=-77.073, ExpectedLat=38.6271, StateCode=, ExpectedID=4349727, CityName...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_API_Test_Suite" title="com.currentweather.api.TC_API_0005_Get_current_weather_data_with_VALID_CityName_and_StateCode_and_CountryCode" hash-for-method="TC_API_0005_Get_current_weather_data_with_VALID_CityName_and_StateCode_and_CountryCode({ExpectedCOD=200, ExpectedLon=-76.3483, ExpectedLat=39.5359, StateCode=MD, ExpectedID=4348240, CityN...)">TC_API_0005_Get_current_weather_data_with_VALID_CityName_and_StateCode_and_CountryCode({ExpectedCOD=200, ExpectedLon=-76.3483, ExpectedLat=39.5359, StateCode=MD, ExpectedID=4348240, CityN...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_API_Test_Suite" title="com.currentweather.api.TC_API_0005_Get_current_weather_data_with_VALID_CityName_and_StateCode_and_CountryCode" hash-for-method="TC_API_0005_Get_current_weather_data_with_VALID_CityName_and_StateCode_and_CountryCode({ExpectedCOD=200, ExpectedLon=-0.1257, ExpectedLat=51.5085, StateCode=US, ExpectedID=2643743, CityNa...)">TC_API_0005_Get_current_weather_data_with_VALID_CityName_and_StateCode_and_CountryCode({ExpectedCOD=200, ExpectedLon=-0.1257, ExpectedLat=51.5085, StateCode=US, ExpectedID=2643743, CityNa...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_API_Test_Suite" title="com.currentweather.api.TC_API_0005_Get_current_weather_data_with_VALID_CityName_and_StateCode_and_CountryCode" hash-for-method="TC_API_0005_Get_current_weather_data_with_VALID_CityName_and_StateCode_and_CountryCode({ExpectedCOD=200, ExpectedLon=-76.5074, ExpectedLat=38.3004, StateCode=MD, ExpectedID=4350049, CityN...)">TC_API_0005_Get_current_weather_data_with_VALID_CityName_and_StateCode_and_CountryCode({ExpectedCOD=200, ExpectedLon=-76.5074, ExpectedLat=38.3004, StateCode=MD, ExpectedID=4350049, CityN...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_API_Test_Suite" title="com.currentweather.api.TC_API_0006_Get_current_weather_data_with_INVALID_CityName_and_StateCode_and_CountryCode" hash-for-method="TC_API_0006_Get_current_weather_data_with_INVALID_CityName_and_StateCode_and_CountryCode({InvalidStateCode=, InvaliCityName=Californiaddfg, InvalidCountryCode=})">TC_API_0006_Get_current_weather_data_with_INVALID_CityName_and_StateCode_and_CountryCode({InvalidStateCode=, InvaliCityName=Californiaddfg, InvalidCountryCode=})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_API_Test_Suite" title="com.currentweather.api.TC_API_0006_Get_current_weather_data_with_INVALID_CityName_and_StateCode_and_CountryCode" hash-for-method="TC_API_0006_Get_current_weather_data_with_INVALID_CityName_and_StateCode_and_CountryCode({InvalidStateCode=, InvaliCityName=1.2341234E7, InvalidCountryCode=US})">TC_API_0006_Get_current_weather_data_with_INVALID_CityName_and_StateCode_and_CountryCode({InvalidStateCode=, InvaliCityName=1.2341234E7, InvalidCountryCode=US})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_API_Test_Suite" title="com.currentweather.api.TC_API_0006_Get_current_weather_data_with_INVALID_CityName_and_StateCode_and_CountryCode" hash-for-method="TC_API_0006_Get_current_weather_data_with_INVALID_CityName_and_StateCode_and_CountryCode({InvalidStateCode=, InvaliCityName=Qarālar-e Mīrzā Ḩoseynqolī, InvalidCountryCode=IR,RI})">TC_API_0006_Get_current_weather_data_with_INVALID_CityName_and_StateCode_and_CountryCode({InvalidStateCode=, InvaliCityName=Qarālar-e Mīrzā Ḩoseynqolī, InvalidCountryCode=IR,RI})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_API_Test_Suite" title="com.currentweather.api.TC_API_0006_Get_current_weather_data_with_INVALID_CityName_and_StateCode_and_CountryCode" hash-for-method="TC_API_0006_Get_current_weather_data_with_INVALID_CityName_and_StateCode_and_CountryCode({InvalidStateCode=MD,MD, InvaliCityName=Bel Air^&amp;$%^&amp;, InvalidCountryCode=US,US})">TC_API_0006_Get_current_weather_data_with_INVALID_CityName_and_StateCode_and_CountryCode({InvalidStateCode=MD,MD, InvaliCityName=Bel Air^&$%^&, InvalidCountryCode=US,US})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_API_Test_Suite" title="com.currentweather.api.TC_API_0006_Get_current_weather_data_with_INVALID_CityName_and_StateCode_and_CountryCode" hash-for-method="TC_API_0006_Get_current_weather_data_with_INVALID_CityName_and_StateCode_and_CountryCode({InvalidStateCode=US, InvaliCityName=Cecil County, InvalidCountryCode=45345.0})">TC_API_0006_Get_current_weather_data_with_INVALID_CityName_and_StateCode_and_CountryCode({InvalidStateCode=US, InvaliCityName=Cecil County, InvalidCountryCode=45345.0})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_API_Test_Suite" title="com.currentweather.api.TC_API_0006_Get_current_weather_data_with_INVALID_CityName_and_StateCode_and_CountryCode" hash-for-method="TC_API_0006_Get_current_weather_data_with_INVALID_CityName_and_StateCode_and_CountryCode({InvalidStateCode=US,US, InvaliCityName=, InvalidCountryCode=GB,GB})">TC_API_0006_Get_current_weather_data_with_INVALID_CityName_and_StateCode_and_CountryCode({InvalidStateCode=US,US, InvaliCityName=, InvalidCountryCode=GB,GB})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-All_API_Test_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-SmokeTestSuite" class="panel SmokeTestSuite">
+        </div> <!-- panel SmokeTestSuite -->
+        <div panel-name="suite-All_API_Test_Suite" class="panel All_API_Test_Suite">
+          <div class="suite-All_API_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.currentweather.api.TC_API_0004_Get_current_weather_data_with_INVALID_CityName_and_StateCode</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_API_0004_Get_current_weather_data_with_INVALID_CityName_and_StateCode({InvalidStateCode=US,US, InvalidCityName=})">
+                  </a> <!-- TC_API_0004_Get_current_weather_data_with_INVALID_CityName_and_StateCode({InvalidStateCode=US,US, InvalidCityName=}) -->
+                  <span class="method-name">TC_API_0004_Get_current_weather_data_with_INVALID_CityName_and_StateCode</span>
+                  <span class="parameters">({InvalidStateCode=US,US, InvalidCityName=})</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected:&lt;404&gt; but was:&lt;200&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:645)
+	at org.junit.Assert.assertEquals(Assert.java:631)
+	at com.currentweather.api.TC_API_0004_Get_current_weather_data_with_INVALID_CityName_and_StateCode.TC_API_0004_Get_current_weather_data_with_INVALID_CityName_and_StateCode(TC_API_0004_Get_current_weather_data_with_INVALID_CityName_and_StateCode.java:37)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_API_Test_Suite-class-failed -->
+          <div class="suite-All_API_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.currentweather.api.TC_API_0005_Get_current_weather_data_with_VALID_CityName_and_StateCode_and_CountryCode</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_API_0005_Get_current_weather_data_with_VALID_CityName_and_StateCode_and_CountryCode({ExpectedCOD=200, ExpectedLon=45.0675, ExpectedLat=37.6747, StateCode=, ExpectedID=18557, CityName=Q...)">
+                  </a> <!-- TC_API_0005_Get_current_weather_data_with_VALID_CityName_and_StateCode_and_CountryCode({ExpectedCOD=200, ExpectedLon=45.0675, ExpectedLat=37.6747, StateCode=, ExpectedID=18557, CityName=Q...) -->
+                  <span class="method-name">TC_API_0005_Get_current_weather_data_with_VALID_CityName_and_StateCode_and_CountryCode</span>
+                  <span class="parameters">({ExpectedCOD=200, ExpectedLon=45.0675, ExpectedLat=37.6747, StateCode=, ExpectedID=18557, CityName=Qarālar-e Mīrzā Ḩoseynqolī, CountryCode=IR, ExpectedName=Qarālar-e Mīrzā Ḩoseynqolī, ExpectedCountry=IR})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_API_0005_Get_current_weather_data_with_VALID_CityName_and_StateCode_and_CountryCode({ExpectedCOD=200, ExpectedLon=-75.9497, ExpectedLat=39.5668, StateCode=US, ExpectedID=4350685, CityN...)">
+                  </a> <!-- TC_API_0005_Get_current_weather_data_with_VALID_CityName_and_StateCode_and_CountryCode({ExpectedCOD=200, ExpectedLon=-75.9497, ExpectedLat=39.5668, StateCode=US, ExpectedID=4350685, CityN...) -->
+                  <span class="method-name">TC_API_0005_Get_current_weather_data_with_VALID_CityName_and_StateCode_and_CountryCode</span>
+                  <span class="parameters">({ExpectedCOD=200, ExpectedLon=-75.9497, ExpectedLat=39.5668, StateCode=US, ExpectedID=4350685, CityName=Cecil County, CountryCode=, ExpectedName=Cecil County, ExpectedCountry=US})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_API_0005_Get_current_weather_data_with_VALID_CityName_and_StateCode_and_CountryCode({ExpectedCOD=200, ExpectedLon=-77.073, ExpectedLat=38.6271, StateCode=, ExpectedID=4349727, CityName...)">
+                  </a> <!-- TC_API_0005_Get_current_weather_data_with_VALID_CityName_and_StateCode_and_CountryCode({ExpectedCOD=200, ExpectedLon=-77.073, ExpectedLat=38.6271, StateCode=, ExpectedID=4349727, CityName...) -->
+                  <span class="method-name">TC_API_0005_Get_current_weather_data_with_VALID_CityName_and_StateCode_and_CountryCode</span>
+                  <span class="parameters">({ExpectedCOD=200, ExpectedLon=-77.073, ExpectedLat=38.6271, StateCode=, ExpectedID=4349727, CityName=Bryans Road, CountryCode=US, ExpectedName=Bryans Road, ExpectedCountry=US})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_API_0005_Get_current_weather_data_with_VALID_CityName_and_StateCode_and_CountryCode({ExpectedCOD=200, ExpectedLon=-76.3483, ExpectedLat=39.5359, StateCode=MD, ExpectedID=4348240, CityN...)">
+                  </a> <!-- TC_API_0005_Get_current_weather_data_with_VALID_CityName_and_StateCode_and_CountryCode({ExpectedCOD=200, ExpectedLon=-76.3483, ExpectedLat=39.5359, StateCode=MD, ExpectedID=4348240, CityN...) -->
+                  <span class="method-name">TC_API_0005_Get_current_weather_data_with_VALID_CityName_and_StateCode_and_CountryCode</span>
+                  <span class="parameters">({ExpectedCOD=200, ExpectedLon=-76.3483, ExpectedLat=39.5359, StateCode=MD, ExpectedID=4348240, CityName=Bel Air, CountryCode=US, ExpectedName=Bel Air, ExpectedCountry=US})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_API_0005_Get_current_weather_data_with_VALID_CityName_and_StateCode_and_CountryCode({ExpectedCOD=200, ExpectedLon=-0.1257, ExpectedLat=51.5085, StateCode=US, ExpectedID=2643743, CityNa...)">
+                  </a> <!-- TC_API_0005_Get_current_weather_data_with_VALID_CityName_and_StateCode_and_CountryCode({ExpectedCOD=200, ExpectedLon=-0.1257, ExpectedLat=51.5085, StateCode=US, ExpectedID=2643743, CityNa...) -->
+                  <span class="method-name">TC_API_0005_Get_current_weather_data_with_VALID_CityName_and_StateCode_and_CountryCode</span>
+                  <span class="parameters">({ExpectedCOD=200, ExpectedLon=-0.1257, ExpectedLat=51.5085, StateCode=US, ExpectedID=2643743, CityName=London, CountryCode=GB, ExpectedName=London, ExpectedCountry=GB})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_API_0005_Get_current_weather_data_with_VALID_CityName_and_StateCode_and_CountryCode({ExpectedCOD=200, ExpectedLon=-76.5074, ExpectedLat=38.3004, StateCode=MD, ExpectedID=4350049, CityN...)">
+                  </a> <!-- TC_API_0005_Get_current_weather_data_with_VALID_CityName_and_StateCode_and_CountryCode({ExpectedCOD=200, ExpectedLon=-76.5074, ExpectedLat=38.3004, StateCode=MD, ExpectedID=4350049, CityN...) -->
+                  <span class="method-name">TC_API_0005_Get_current_weather_data_with_VALID_CityName_and_StateCode_and_CountryCode</span>
+                  <span class="parameters">({ExpectedCOD=200, ExpectedLon=-76.5074, ExpectedLat=38.3004, StateCode=MD, ExpectedID=4350049, CityName=California, CountryCode=US, ExpectedName=California, ExpectedCountry=US})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_API_Test_Suite-class-passed -->
+          <div class="suite-All_API_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.currentweather.api.TC_API_0003_Get_current_weather_data_with_VALID_CityName_and_StateCode</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_API_0003_Get_current_weather_data_with_VALID_CityName_and_StateCode({ExpectedCOD=200, ExpectedLon=151.6667, ExpectedLat=-32.95, StateCode=, ExpectedID=2171766, CityName...)">
+                  </a> <!-- TC_API_0003_Get_current_weather_data_with_VALID_CityName_and_StateCode({ExpectedCOD=200, ExpectedLon=151.6667, ExpectedLat=-32.95, StateCode=, ExpectedID=2171766, CityName...) -->
+                  <span class="method-name">TC_API_0003_Get_current_weather_data_with_VALID_CityName_and_StateCode</span>
+                  <span class="parameters">({ExpectedCOD=200, ExpectedLon=151.6667, ExpectedLat=-32.95, StateCode=, ExpectedID=2171766, CityName=Charlestown, ExpectedName=Charlestown, ExpectedCountry=AU})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_API_0003_Get_current_weather_data_with_VALID_CityName_and_StateCode({ExpectedCOD=200, ExpectedLon=45.0675, ExpectedLat=37.6747, StateCode=IR, ExpectedID=18557, CityName...)">
+                  </a> <!-- TC_API_0003_Get_current_weather_data_with_VALID_CityName_and_StateCode({ExpectedCOD=200, ExpectedLon=45.0675, ExpectedLat=37.6747, StateCode=IR, ExpectedID=18557, CityName...) -->
+                  <span class="method-name">TC_API_0003_Get_current_weather_data_with_VALID_CityName_and_StateCode</span>
+                  <span class="parameters">({ExpectedCOD=200, ExpectedLon=45.0675, ExpectedLat=37.6747, StateCode=IR, ExpectedID=18557, CityName=Qarālar-e Mīrzā Ḩoseynqolī, ExpectedName=Qarālar-e Mīrzā Ḩoseynqolī, ExpectedCountry=IR})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_API_0003_Get_current_weather_data_with_VALID_CityName_and_StateCode({ExpectedCOD=200, ExpectedLon=-76.5074, ExpectedLat=38.3004, StateCode=US, ExpectedID=4350049, CityN...)">
+                  </a> <!-- TC_API_0003_Get_current_weather_data_with_VALID_CityName_and_StateCode({ExpectedCOD=200, ExpectedLon=-76.5074, ExpectedLat=38.3004, StateCode=US, ExpectedID=4350049, CityN...) -->
+                  <span class="method-name">TC_API_0003_Get_current_weather_data_with_VALID_CityName_and_StateCode</span>
+                  <span class="parameters">({ExpectedCOD=200, ExpectedLon=-76.5074, ExpectedLat=38.3004, StateCode=US, ExpectedID=4350049, CityName=California, ExpectedName=California, ExpectedCountry=US})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_API_0003_Get_current_weather_data_with_VALID_CityName_and_StateCode({ExpectedCOD=200, ExpectedLon=-0.1257, ExpectedLat=51.5085, StateCode=UK, ExpectedID=2643743, CityNa...)">
+                  </a> <!-- TC_API_0003_Get_current_weather_data_with_VALID_CityName_and_StateCode({ExpectedCOD=200, ExpectedLon=-0.1257, ExpectedLat=51.5085, StateCode=UK, ExpectedID=2643743, CityNa...) -->
+                  <span class="method-name">TC_API_0003_Get_current_weather_data_with_VALID_CityName_and_StateCode</span>
+                  <span class="parameters">({ExpectedCOD=200, ExpectedLon=-0.1257, ExpectedLat=51.5085, StateCode=UK, ExpectedID=2643743, CityName=London, ExpectedName=London, ExpectedCountry=GB})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_API_0003_Get_current_weather_data_with_VALID_CityName_and_StateCode({ExpectedCOD=200, ExpectedLon=-83.4483, ExpectedLat=39.8865, StateCode=US, ExpectedID=4517009, CityN...)">
+                  </a> <!-- TC_API_0003_Get_current_weather_data_with_VALID_CityName_and_StateCode({ExpectedCOD=200, ExpectedLon=-83.4483, ExpectedLat=39.8865, StateCode=US, ExpectedID=4517009, CityN...) -->
+                  <span class="method-name">TC_API_0003_Get_current_weather_data_with_VALID_CityName_and_StateCode</span>
+                  <span class="parameters">({ExpectedCOD=200, ExpectedLon=-83.4483, ExpectedLat=39.8865, StateCode=US, ExpectedID=4517009, CityName=London, ExpectedName=London, ExpectedCountry=US})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_API_Test_Suite-class-passed -->
+          <div class="suite-All_API_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.currentweather.api.TC_API_0001_Get_current_weather_data_with_VALID_CityName</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_API_0001_Get_current_weather_data_with_VALID_CityName({ExpectedCOD=200, ExpectedLon=13.2396, ExpectedLat=56.9989, ExpectedID=2704008, CityName=Hyltebruk, ...)">
+                  </a> <!-- TC_API_0001_Get_current_weather_data_with_VALID_CityName({ExpectedCOD=200, ExpectedLon=13.2396, ExpectedLat=56.9989, ExpectedID=2704008, CityName=Hyltebruk, ...) -->
+                  <span class="method-name">TC_API_0001_Get_current_weather_data_with_VALID_CityName</span>
+                  <span class="parameters">({ExpectedCOD=200, ExpectedLon=13.2396, ExpectedLat=56.9989, ExpectedID=2704008, CityName=Hyltebruk, ExpectedName=Hyltebruk, ExpectedCountry=SE})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_API_0001_Get_current_weather_data_with_VALID_CityName({ExpectedCOD=200, ExpectedLon=-76.5074, ExpectedLat=38.3004, ExpectedID=4350049, CityName=California...)">
+                  </a> <!-- TC_API_0001_Get_current_weather_data_with_VALID_CityName({ExpectedCOD=200, ExpectedLon=-76.5074, ExpectedLat=38.3004, ExpectedID=4350049, CityName=California...) -->
+                  <span class="method-name">TC_API_0001_Get_current_weather_data_with_VALID_CityName</span>
+                  <span class="parameters">({ExpectedCOD=200, ExpectedLon=-76.5074, ExpectedLat=38.3004, ExpectedID=4350049, CityName=California, ExpectedName=California, ExpectedCountry=US})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_API_0001_Get_current_weather_data_with_VALID_CityName({ExpectedCOD=200, ExpectedLon=45.0675, ExpectedLat=37.6747, ExpectedID=18557, CityName=Qarālar-e Mīr...)">
+                  </a> <!-- TC_API_0001_Get_current_weather_data_with_VALID_CityName({ExpectedCOD=200, ExpectedLon=45.0675, ExpectedLat=37.6747, ExpectedID=18557, CityName=Qarālar-e Mīr...) -->
+                  <span class="method-name">TC_API_0001_Get_current_weather_data_with_VALID_CityName</span>
+                  <span class="parameters">({ExpectedCOD=200, ExpectedLon=45.0675, ExpectedLat=37.6747, ExpectedID=18557, CityName=Qarālar-e Mīrzā Ḩoseynqolī, ExpectedName=Qarālar-e Mīrzā Ḩoseynqolī, ExpectedCountry=IR})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_API_0001_Get_current_weather_data_with_VALID_CityName({ExpectedCOD=200, ExpectedLon=-0.1257, ExpectedLat=51.5085, ExpectedID=2643743, CityName=London, Exp...)">
+                  </a> <!-- TC_API_0001_Get_current_weather_data_with_VALID_CityName({ExpectedCOD=200, ExpectedLon=-0.1257, ExpectedLat=51.5085, ExpectedID=2643743, CityName=London, Exp...) -->
+                  <span class="method-name">TC_API_0001_Get_current_weather_data_with_VALID_CityName</span>
+                  <span class="parameters">({ExpectedCOD=200, ExpectedLon=-0.1257, ExpectedLat=51.5085, ExpectedID=2643743, CityName=London, ExpectedName=London, ExpectedCountry=GB})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_API_Test_Suite-class-passed -->
+          <div class="suite-All_API_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.currentweather.api.TC_API_0002_Get_current_weather_data_with_INVALID_CityName</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_API_0002_Get_current_weather_data_with_INVALID_CityName({InvalidCityName=testingforlongcharacter#@$%@#$%@#$%})">
+                  </a> <!-- TC_API_0002_Get_current_weather_data_with_INVALID_CityName({InvalidCityName=testingforlongcharacter#@$%@#$%@#$%}) -->
+                  <span class="method-name">TC_API_0002_Get_current_weather_data_with_INVALID_CityName</span>
+                  <span class="parameters">({InvalidCityName=testingforlongcharacter#@$%@#$%@#$%})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_API_0002_Get_current_weather_data_with_INVALID_CityName({InvalidCityName=NULL})">
+                  </a> <!-- TC_API_0002_Get_current_weather_data_with_INVALID_CityName({InvalidCityName=NULL}) -->
+                  <span class="method-name">TC_API_0002_Get_current_weather_data_with_INVALID_CityName</span>
+                  <span class="parameters">({InvalidCityName=NULL})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_API_0002_Get_current_weather_data_with_INVALID_CityName({InvalidCityName=London+US})">
+                  </a> <!-- TC_API_0002_Get_current_weather_data_with_INVALID_CityName({InvalidCityName=London+US}) -->
+                  <span class="method-name">TC_API_0002_Get_current_weather_data_with_INVALID_CityName</span>
+                  <span class="parameters">({InvalidCityName=London+US})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_API_0002_Get_current_weather_data_with_INVALID_CityName({InvalidCityName=2342345.0})">
+                  </a> <!-- TC_API_0002_Get_current_weather_data_with_INVALID_CityName({InvalidCityName=2342345.0}) -->
+                  <span class="method-name">TC_API_0002_Get_current_weather_data_with_INVALID_CityName</span>
+                  <span class="parameters">({InvalidCityName=2342345.0})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_API_0002_Get_current_weather_data_with_INVALID_CityName({InvalidCityName=Lodon@gmail.com})">
+                  </a> <!-- TC_API_0002_Get_current_weather_data_with_INVALID_CityName({InvalidCityName=Lodon@gmail.com}) -->
+                  <span class="method-name">TC_API_0002_Get_current_weather_data_with_INVALID_CityName</span>
+                  <span class="parameters">({InvalidCityName=Lodon@gmail.com})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_API_0002_Get_current_weather_data_with_INVALID_CityName({InvalidCityName=12#!@$})">
+                  </a> <!-- TC_API_0002_Get_current_weather_data_with_INVALID_CityName({InvalidCityName=12#!@$}) -->
+                  <span class="method-name">TC_API_0002_Get_current_weather_data_with_INVALID_CityName</span>
+                  <span class="parameters">({InvalidCityName=12#!@$})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_API_Test_Suite-class-passed -->
+          <div class="suite-All_API_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.currentweather.api.TC_API_0006_Get_current_weather_data_with_INVALID_CityName_and_StateCode_and_CountryCode</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_API_0006_Get_current_weather_data_with_INVALID_CityName_and_StateCode_and_CountryCode({InvalidStateCode=, InvaliCityName=Californiaddfg, InvalidCountryCode=})">
+                  </a> <!-- TC_API_0006_Get_current_weather_data_with_INVALID_CityName_and_StateCode_and_CountryCode({InvalidStateCode=, InvaliCityName=Californiaddfg, InvalidCountryCode=}) -->
+                  <span class="method-name">TC_API_0006_Get_current_weather_data_with_INVALID_CityName_and_StateCode_and_CountryCode</span>
+                  <span class="parameters">({InvalidStateCode=, InvaliCityName=Californiaddfg, InvalidCountryCode=})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_API_0006_Get_current_weather_data_with_INVALID_CityName_and_StateCode_and_CountryCode({InvalidStateCode=, InvaliCityName=1.2341234E7, InvalidCountryCode=US})">
+                  </a> <!-- TC_API_0006_Get_current_weather_data_with_INVALID_CityName_and_StateCode_and_CountryCode({InvalidStateCode=, InvaliCityName=1.2341234E7, InvalidCountryCode=US}) -->
+                  <span class="method-name">TC_API_0006_Get_current_weather_data_with_INVALID_CityName_and_StateCode_and_CountryCode</span>
+                  <span class="parameters">({InvalidStateCode=, InvaliCityName=1.2341234E7, InvalidCountryCode=US})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_API_0006_Get_current_weather_data_with_INVALID_CityName_and_StateCode_and_CountryCode({InvalidStateCode=, InvaliCityName=Qarālar-e Mīrzā Ḩoseynqolī, InvalidCountryCode=IR,RI})">
+                  </a> <!-- TC_API_0006_Get_current_weather_data_with_INVALID_CityName_and_StateCode_and_CountryCode({InvalidStateCode=, InvaliCityName=Qarālar-e Mīrzā Ḩoseynqolī, InvalidCountryCode=IR,RI}) -->
+                  <span class="method-name">TC_API_0006_Get_current_weather_data_with_INVALID_CityName_and_StateCode_and_CountryCode</span>
+                  <span class="parameters">({InvalidStateCode=, InvaliCityName=Qarālar-e Mīrzā Ḩoseynqolī, InvalidCountryCode=IR,RI})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_API_0006_Get_current_weather_data_with_INVALID_CityName_and_StateCode_and_CountryCode({InvalidStateCode=MD,MD, InvaliCityName=Bel Air^&amp;$%^&amp;, InvalidCountryCode=US,US})">
+                  </a> <!-- TC_API_0006_Get_current_weather_data_with_INVALID_CityName_and_StateCode_and_CountryCode({InvalidStateCode=MD,MD, InvaliCityName=Bel Air^&$%^&, InvalidCountryCode=US,US}) -->
+                  <span class="method-name">TC_API_0006_Get_current_weather_data_with_INVALID_CityName_and_StateCode_and_CountryCode</span>
+                  <span class="parameters">({InvalidStateCode=MD,MD, InvaliCityName=Bel Air^&$%^&, InvalidCountryCode=US,US})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_API_0006_Get_current_weather_data_with_INVALID_CityName_and_StateCode_and_CountryCode({InvalidStateCode=US, InvaliCityName=Cecil County, InvalidCountryCode=45345.0})">
+                  </a> <!-- TC_API_0006_Get_current_weather_data_with_INVALID_CityName_and_StateCode_and_CountryCode({InvalidStateCode=US, InvaliCityName=Cecil County, InvalidCountryCode=45345.0}) -->
+                  <span class="method-name">TC_API_0006_Get_current_weather_data_with_INVALID_CityName_and_StateCode_and_CountryCode</span>
+                  <span class="parameters">({InvalidStateCode=US, InvaliCityName=Cecil County, InvalidCountryCode=45345.0})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_API_0006_Get_current_weather_data_with_INVALID_CityName_and_StateCode_and_CountryCode({InvalidStateCode=US,US, InvaliCityName=, InvalidCountryCode=GB,GB})">
+                  </a> <!-- TC_API_0006_Get_current_weather_data_with_INVALID_CityName_and_StateCode_and_CountryCode({InvalidStateCode=US,US, InvaliCityName=, InvalidCountryCode=GB,GB}) -->
+                  <span class="method-name">TC_API_0006_Get_current_weather_data_with_INVALID_CityName_and_StateCode_and_CountryCode</span>
+                  <span class="parameters">({InvalidStateCode=US,US, InvaliCityName=, InvalidCountryCode=GB,GB})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_API_Test_Suite-class-passed -->
+          <div class="suite-All_API_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.currentweather.api.TC_API_0004_Get_current_weather_data_with_INVALID_CityName_and_StateCode</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_API_0004_Get_current_weather_data_with_INVALID_CityName_and_StateCode({InvalidStateCode=UKK, InvalidCityName=London+US})">
+                  </a> <!-- TC_API_0004_Get_current_weather_data_with_INVALID_CityName_and_StateCode({InvalidStateCode=UKK, InvalidCityName=London+US}) -->
+                  <span class="method-name">TC_API_0004_Get_current_weather_data_with_INVALID_CityName_and_StateCode</span>
+                  <span class="parameters">({InvalidStateCode=UKK, InvalidCityName=London+US})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_API_0004_Get_current_weather_data_with_INVALID_CityName_and_StateCode({InvalidStateCode=, InvalidCityName=California@#$%@#$%})">
+                  </a> <!-- TC_API_0004_Get_current_weather_data_with_INVALID_CityName_and_StateCode({InvalidStateCode=, InvalidCityName=California@#$%@#$%}) -->
+                  <span class="method-name">TC_API_0004_Get_current_weather_data_with_INVALID_CityName_and_StateCode</span>
+                  <span class="parameters">({InvalidStateCode=, InvalidCityName=California@#$%@#$%})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_API_0004_Get_current_weather_data_with_INVALID_CityName_and_StateCode({InvalidStateCode=USS, InvalidCityName=FASDFAS})">
+                  </a> <!-- TC_API_0004_Get_current_weather_data_with_INVALID_CityName_and_StateCode({InvalidStateCode=USS, InvalidCityName=FASDFAS}) -->
+                  <span class="method-name">TC_API_0004_Get_current_weather_data_with_INVALID_CityName_and_StateCode</span>
+                  <span class="parameters">({InvalidStateCode=USS, InvalidCityName=FASDFAS})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_API_0004_Get_current_weather_data_with_INVALID_CityName_and_StateCode({InvalidStateCode=IR, InvalidCityName=Qarālar-e Mīrzā Ḩoseynqolīa!@#})">
+                  </a> <!-- TC_API_0004_Get_current_weather_data_with_INVALID_CityName_and_StateCode({InvalidStateCode=IR, InvalidCityName=Qarālar-e Mīrzā Ḩoseynqolīa!@#}) -->
+                  <span class="method-name">TC_API_0004_Get_current_weather_data_with_INVALID_CityName_and_StateCode</span>
+                  <span class="parameters">({InvalidStateCode=IR, InvalidCityName=Qarālar-e Mīrzā Ḩoseynqolīa!@#})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_API_Test_Suite-class-passed -->
+        </div> <!-- panel All_API_Test_Suite -->
+        <div panel-name="test-xml-SmokeTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/locnguyen/Documents/SeftLearning/API/APITestingMasterClass/OpenWeatherMapAPI/src/test/resources/RegressionAPITest.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;SmokeTestSuite&quot;&gt;
+  &lt;suite-files&gt;
+    &lt;suite-file path=&quot;TestSuiteAPI.xml&quot;/&gt;
+  &lt;/suite-files&gt;
+&lt;/suite&gt; &lt;!-- SmokeTestSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="test-xml-All_API_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/locnguyen/Documents/SeftLearning/API/APITestingMasterClass/OpenWeatherMapAPI/src/test/resources/TestSuiteAPI.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;All API Test Suite&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Get current data for one location by City Name&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.currentweather.api.TC_API_0001_Get_current_weather_data_with_VALID_CityName&quot;/&gt;
+      &lt;class name=&quot;com.currentweather.api.TC_API_0002_Get_current_weather_data_with_INVALID_CityName&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Get current data for one location by City Name --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Get current data for one location by City Name and State Code&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.currentweather.api.TC_API_0003_Get_current_weather_data_with_VALID_CityName_and_StateCode&quot;/&gt;
+      &lt;class name=&quot;com.currentweather.api.TC_API_0004_Get_current_weather_data_with_INVALID_CityName_and_StateCode&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Get current data for one location by City Name and State Code --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Get current data for one location by City Name, State Code and Country Code&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.currentweather.api.TC_API_0005_Get_current_weather_data_with_VALID_CityName_and_StateCode_and_CountryCode&quot;/&gt;
+      &lt;class name=&quot;com.currentweather.api.TC_API_0006_Get_current_weather_data_with_INVALID_CityName_and_StateCode_and_CountryCode&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Get current data for one location by City Name, State Code and Country Code --&gt;
+&lt;/suite&gt; &lt;!-- All API Test Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-SmokeTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for SmokeTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-All_API_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for All API Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Get current data for one location by City Name (2 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">Get current data for one location by City Name and State Code (2 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">Get current data for one location by City Name, State Code and Country Code (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-SmokeTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for SmokeTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-All_API_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for All API Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-SmokeTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for SmokeTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_SmokeTestSuite');
+function tableData_SmokeTestSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(0);
+window.suiteTableData['SmokeTestSuite']= { tableData: data, tableDiv: 'times-div-SmokeTestSuite'}
+return data;
+}
+              </script>
+              <div id="times-div-SmokeTestSuite">
+              </div> <!-- times-div-SmokeTestSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-All_API_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for All API Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_All_API_Test_Suite');
+function tableData_All_API_Test_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(32);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'TC_API_0001_Get_current_weather_data_with_VALID_CityName')
+data.setCell(0, 2, 'com.currentweather.api.TC_API_0001_Get_current_weather_data_with_VALID_CityName')
+data.setCell(0, 3, 3846);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'TC_API_0001_Get_current_weather_data_with_VALID_CityName')
+data.setCell(1, 2, 'com.currentweather.api.TC_API_0001_Get_current_weather_data_with_VALID_CityName')
+data.setCell(1, 3, 392);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'TC_API_0003_Get_current_weather_data_with_VALID_CityName_and_StateCode')
+data.setCell(2, 2, 'com.currentweather.api.TC_API_0003_Get_current_weather_data_with_VALID_CityName_and_StateCode')
+data.setCell(2, 3, 283);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'TC_API_0005_Get_current_weather_data_with_VALID_CityName_and_StateCode_and_CountryCode')
+data.setCell(3, 2, 'com.currentweather.api.TC_API_0005_Get_current_weather_data_with_VALID_CityName_and_StateCode_and_CountryCode')
+data.setCell(3, 3, 270);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'TC_API_0001_Get_current_weather_data_with_VALID_CityName')
+data.setCell(4, 2, 'com.currentweather.api.TC_API_0001_Get_current_weather_data_with_VALID_CityName')
+data.setCell(4, 3, 264);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'TC_API_0001_Get_current_weather_data_with_VALID_CityName')
+data.setCell(5, 2, 'com.currentweather.api.TC_API_0001_Get_current_weather_data_with_VALID_CityName')
+data.setCell(5, 3, 263);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'TC_API_0003_Get_current_weather_data_with_VALID_CityName_and_StateCode')
+data.setCell(6, 2, 'com.currentweather.api.TC_API_0003_Get_current_weather_data_with_VALID_CityName_and_StateCode')
+data.setCell(6, 3, 262);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'TC_API_0005_Get_current_weather_data_with_VALID_CityName_and_StateCode_and_CountryCode')
+data.setCell(7, 2, 'com.currentweather.api.TC_API_0005_Get_current_weather_data_with_VALID_CityName_and_StateCode_and_CountryCode')
+data.setCell(7, 3, 253);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'TC_API_0003_Get_current_weather_data_with_VALID_CityName_and_StateCode')
+data.setCell(8, 2, 'com.currentweather.api.TC_API_0003_Get_current_weather_data_with_VALID_CityName_and_StateCode')
+data.setCell(8, 3, 250);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'TC_API_0003_Get_current_weather_data_with_VALID_CityName_and_StateCode')
+data.setCell(9, 2, 'com.currentweather.api.TC_API_0003_Get_current_weather_data_with_VALID_CityName_and_StateCode')
+data.setCell(9, 3, 247);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'TC_API_0005_Get_current_weather_data_with_VALID_CityName_and_StateCode_and_CountryCode')
+data.setCell(10, 2, 'com.currentweather.api.TC_API_0005_Get_current_weather_data_with_VALID_CityName_and_StateCode_and_CountryCode')
+data.setCell(10, 3, 206);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'TC_API_0004_Get_current_weather_data_with_INVALID_CityName_and_StateCode')
+data.setCell(11, 2, 'com.currentweather.api.TC_API_0004_Get_current_weather_data_with_INVALID_CityName_and_StateCode')
+data.setCell(11, 3, 205);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'TC_API_0005_Get_current_weather_data_with_VALID_CityName_and_StateCode_and_CountryCode')
+data.setCell(12, 2, 'com.currentweather.api.TC_API_0005_Get_current_weather_data_with_VALID_CityName_and_StateCode_and_CountryCode')
+data.setCell(12, 3, 205);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'TC_API_0005_Get_current_weather_data_with_VALID_CityName_and_StateCode_and_CountryCode')
+data.setCell(13, 2, 'com.currentweather.api.TC_API_0005_Get_current_weather_data_with_VALID_CityName_and_StateCode_and_CountryCode')
+data.setCell(13, 3, 203);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'TC_API_0003_Get_current_weather_data_with_VALID_CityName_and_StateCode')
+data.setCell(14, 2, 'com.currentweather.api.TC_API_0003_Get_current_weather_data_with_VALID_CityName_and_StateCode')
+data.setCell(14, 3, 202);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'TC_API_0005_Get_current_weather_data_with_VALID_CityName_and_StateCode_and_CountryCode')
+data.setCell(15, 2, 'com.currentweather.api.TC_API_0005_Get_current_weather_data_with_VALID_CityName_and_StateCode_and_CountryCode')
+data.setCell(15, 3, 186);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'TC_API_0002_Get_current_weather_data_with_INVALID_CityName')
+data.setCell(16, 2, 'com.currentweather.api.TC_API_0002_Get_current_weather_data_with_INVALID_CityName')
+data.setCell(16, 3, 171);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'TC_API_0006_Get_current_weather_data_with_INVALID_CityName_and_StateCode_and_CountryCode')
+data.setCell(17, 2, 'com.currentweather.api.TC_API_0006_Get_current_weather_data_with_INVALID_CityName_and_StateCode_and_CountryCode')
+data.setCell(17, 3, 155);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'TC_API_0004_Get_current_weather_data_with_INVALID_CityName_and_StateCode')
+data.setCell(18, 2, 'com.currentweather.api.TC_API_0004_Get_current_weather_data_with_INVALID_CityName_and_StateCode')
+data.setCell(18, 3, 128);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'TC_API_0004_Get_current_weather_data_with_INVALID_CityName_and_StateCode')
+data.setCell(19, 2, 'com.currentweather.api.TC_API_0004_Get_current_weather_data_with_INVALID_CityName_and_StateCode')
+data.setCell(19, 3, 124);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'TC_API_0002_Get_current_weather_data_with_INVALID_CityName')
+data.setCell(20, 2, 'com.currentweather.api.TC_API_0002_Get_current_weather_data_with_INVALID_CityName')
+data.setCell(20, 3, 116);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'TC_API_0002_Get_current_weather_data_with_INVALID_CityName')
+data.setCell(21, 2, 'com.currentweather.api.TC_API_0002_Get_current_weather_data_with_INVALID_CityName')
+data.setCell(21, 3, 113);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'TC_API_0002_Get_current_weather_data_with_INVALID_CityName')
+data.setCell(22, 2, 'com.currentweather.api.TC_API_0002_Get_current_weather_data_with_INVALID_CityName')
+data.setCell(22, 3, 111);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'TC_API_0006_Get_current_weather_data_with_INVALID_CityName_and_StateCode_and_CountryCode')
+data.setCell(23, 2, 'com.currentweather.api.TC_API_0006_Get_current_weather_data_with_INVALID_CityName_and_StateCode_and_CountryCode')
+data.setCell(23, 3, 108);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'TC_API_0002_Get_current_weather_data_with_INVALID_CityName')
+data.setCell(24, 2, 'com.currentweather.api.TC_API_0002_Get_current_weather_data_with_INVALID_CityName')
+data.setCell(24, 3, 106);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'TC_API_0004_Get_current_weather_data_with_INVALID_CityName_and_StateCode')
+data.setCell(25, 2, 'com.currentweather.api.TC_API_0004_Get_current_weather_data_with_INVALID_CityName_and_StateCode')
+data.setCell(25, 3, 104);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'TC_API_0002_Get_current_weather_data_with_INVALID_CityName')
+data.setCell(26, 2, 'com.currentweather.api.TC_API_0002_Get_current_weather_data_with_INVALID_CityName')
+data.setCell(26, 3, 98);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'TC_API_0006_Get_current_weather_data_with_INVALID_CityName_and_StateCode_and_CountryCode')
+data.setCell(27, 2, 'com.currentweather.api.TC_API_0006_Get_current_weather_data_with_INVALID_CityName_and_StateCode_and_CountryCode')
+data.setCell(27, 3, 93);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'TC_API_0006_Get_current_weather_data_with_INVALID_CityName_and_StateCode_and_CountryCode')
+data.setCell(28, 2, 'com.currentweather.api.TC_API_0006_Get_current_weather_data_with_INVALID_CityName_and_StateCode_and_CountryCode')
+data.setCell(28, 3, 91);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'TC_API_0004_Get_current_weather_data_with_INVALID_CityName_and_StateCode')
+data.setCell(29, 2, 'com.currentweather.api.TC_API_0004_Get_current_weather_data_with_INVALID_CityName_and_StateCode')
+data.setCell(29, 3, 87);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'TC_API_0006_Get_current_weather_data_with_INVALID_CityName_and_StateCode_and_CountryCode')
+data.setCell(30, 2, 'com.currentweather.api.TC_API_0006_Get_current_weather_data_with_INVALID_CityName_and_StateCode_and_CountryCode')
+data.setCell(30, 3, 78);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'TC_API_0006_Get_current_weather_data_with_INVALID_CityName_and_StateCode_and_CountryCode')
+data.setCell(31, 2, 'com.currentweather.api.TC_API_0006_Get_current_weather_data_with_INVALID_CityName_and_StateCode_and_CountryCode')
+data.setCell(31, 3, 77);
+window.suiteTableData['All_API_Test_Suite']= { tableData: data, tableDiv: 'times-div-All_API_Test_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 9 seconds</span>
+              <div id="times-div-All_API_Test_Suite">
+              </div> <!-- times-div-All_API_Test_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-SmokeTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for SmokeTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-All_API_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for All API Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TC_API_0002_Get_current_weather_data_with_INVALID_CityName({InvalidCityName=testingforlongcharacter#@$%@#$%@#$%})</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">11:30:57.633 [main] INFO  com.currentweather.utils.LogHelper - 1. Send Get request to the server with city = testingforlongcharacter#@$%@#$%@#$%
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:57.744 [main] INFO  com.currentweather.utils.LogHelper - 2. Get content type of api
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:57.745 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify content type is default JSON 
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:57.748 [main] INFO  com.currentweather.utils.LogHelper - 3. Get the response status code
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:57.749 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response status code is 200
+</span>
+                <span class="reporter-method-output"></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TC_API_0001_Get_current_weather_data_with_VALID_CityName({ExpectedCOD=200, ExpectedLon=13.2396, ExpectedLat=56.9989, ExpectedID=2704008, CityName=Hyltebruk, ...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">11:30:56.521 [main] INFO  com.currentweather.utils.LogHelper - 1. Send Get request to the server with city = Hyltebruk
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:56.817 [main] INFO  com.currentweather.utils.LogHelper - 2. Get content type of api
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:56.817 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify content type is default JSON 
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:56.818 [main] INFO  com.currentweather.utils.LogHelper - 3. Get the response status code
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:56.818 [main] INFO  com.currentweather.utils.LogHelper - Validation Point: Verify response status code is 200
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:56.818 [main] INFO  com.currentweather.utils.LogHelper - 4. Get response body
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:56.819 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly longitude
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:56.845 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly latitude
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:56.860 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly location id
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:56.874 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly location name
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:56.887 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly location cod
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:56.900 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly country
+</span>
+                <span class="reporter-method-output"></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TC_API_0002_Get_current_weather_data_with_INVALID_CityName({InvalidCityName=NULL})</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">11:30:57.750 [main] INFO  com.currentweather.utils.LogHelper - 1. Send Get request to the server with city = NULL
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:57.862 [main] INFO  com.currentweather.utils.LogHelper - 2. Get content type of api
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:57.862 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify content type is default JSON 
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:57.863 [main] INFO  com.currentweather.utils.LogHelper - 3. Get the response status code
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:57.863 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response status code is 200
+</span>
+                <span class="reporter-method-output"></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TC_API_0002_Get_current_weather_data_with_INVALID_CityName({InvalidCityName=London+US})</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">11:30:57.526 [main] INFO  com.currentweather.utils.LogHelper - 1. Send Get request to the server with city = London+US
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:57.631 [main] INFO  com.currentweather.utils.LogHelper - 2. Get content type of api
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:57.631 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify content type is default JSON 
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:57.632 [main] INFO  com.currentweather.utils.LogHelper - 3. Get the response status code
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:57.632 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response status code is 200
+</span>
+                <span class="reporter-method-output"></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TC_API_0002_Get_current_weather_data_with_INVALID_CityName({InvalidCityName=2342345.0})</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">11:30:57.864 [main] INFO  com.currentweather.utils.LogHelper - 1. Send Get request to the server with city = 2342345.0
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:57.973 [main] INFO  com.currentweather.utils.LogHelper - 2. Get content type of api
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:57.974 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify content type is default JSON 
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:57.974 [main] INFO  com.currentweather.utils.LogHelper - 3. Get the response status code
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:57.974 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response status code is 200
+</span>
+                <span class="reporter-method-output"></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TC_API_0002_Get_current_weather_data_with_INVALID_CityName({InvalidCityName=Lodon@gmail.com})</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">11:30:58.075 [main] INFO  com.currentweather.utils.LogHelper - 1. Send Get request to the server with city = Lodon@gmail.com
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:58.242 [main] INFO  com.currentweather.utils.LogHelper - 2. Get content type of api
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:58.243 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify content type is default JSON 
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:58.244 [main] INFO  com.currentweather.utils.LogHelper - 3. Get the response status code
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:58.245 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response status code is 200
+</span>
+                <span class="reporter-method-output"></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TC_API_0001_Get_current_weather_data_with_VALID_CityName({ExpectedCOD=200, ExpectedLon=-76.5074, ExpectedLat=38.3004, ExpectedID=4350049, CityName=California...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">11:30:56.913 [main] INFO  com.currentweather.utils.LogHelper - 1. Send Get request to the server with city = California
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:57.021 [main] INFO  com.currentweather.utils.LogHelper - 2. Get content type of api
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:57.021 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify content type is default JSON 
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:57.021 [main] INFO  com.currentweather.utils.LogHelper - 3. Get the response status code
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:57.022 [main] INFO  com.currentweather.utils.LogHelper - Validation Point: Verify response status code is 200
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:57.022 [main] INFO  com.currentweather.utils.LogHelper - 4. Get response body
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:57.023 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly longitude
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:57.059 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly latitude
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:57.091 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly location id
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:57.120 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly location name
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:57.141 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly location cod
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:57.157 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly country
+</span>
+                <span class="reporter-method-output"></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TC_API_0001_Get_current_weather_data_with_VALID_CityName({ExpectedCOD=200, ExpectedLon=45.0675, ExpectedLat=37.6747, ExpectedID=18557, CityName=Qarālar-e Mīr...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">11:30:57.176 [main] INFO  com.currentweather.utils.LogHelper - 1. Send Get request to the server with city = Qarālar-e Mīrzā Ḩoseynqolī
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:57.317 [main] INFO  com.currentweather.utils.LogHelper - 2. Get content type of api
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:57.317 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify content type is default JSON 
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:57.317 [main] INFO  com.currentweather.utils.LogHelper - 3. Get the response status code
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:57.317 [main] INFO  com.currentweather.utils.LogHelper - Validation Point: Verify response status code is 200
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:57.317 [main] INFO  com.currentweather.utils.LogHelper - 4. Get response body
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:57.319 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly longitude
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:57.353 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly latitude
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:57.372 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly location id
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:57.388 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly location name
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:57.403 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly location cod
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:57.414 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly country
+</span>
+                <span class="reporter-method-output"></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TC_API_0002_Get_current_weather_data_with_INVALID_CityName({InvalidCityName=12#!@$})</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">11:30:57.977 [main] INFO  com.currentweather.utils.LogHelper - 1. Send Get request to the server with city = 12#!@$
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:58.074 [main] INFO  com.currentweather.utils.LogHelper - 2. Get content type of api
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:58.074 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify content type is default JSON 
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:58.074 [main] INFO  com.currentweather.utils.LogHelper - 3. Get the response status code
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:58.074 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response status code is 200
+</span>
+                <span class="reporter-method-output"></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TC_API_0001_Get_current_weather_data_with_VALID_CityName({ExpectedCOD=200, ExpectedLon=-0.1257, ExpectedLat=51.5085, ExpectedID=2643743, CityName=London, Exp...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">11:30:52.680 [main] INFO  com.currentweather.utils.LogHelper - 1. Send Get request to the server with city = London
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:55.437 [main] INFO  com.currentweather.utils.LogHelper - 2. Get content type of api
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:55.437 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify content type is default JSON 
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:55.440 [main] INFO  com.currentweather.utils.LogHelper - 3. Get the response status code
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:55.441 [main] INFO  com.currentweather.utils.LogHelper - Validation Point: Verify response status code is 200
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:55.441 [main] INFO  com.currentweather.utils.LogHelper - 4. Get response body
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:55.522 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly longitude
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:56.416 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly latitude
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:56.434 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly location id
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:56.449 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly location name
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:56.466 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly location cod
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:56.483 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly country
+</span>
+                <span class="reporter-method-output"></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TC_API_0004_Get_current_weather_data_with_INVALID_CityName_and_StateCode({InvalidStateCode=UKK, InvalidCityName=London+US})</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">11:30:59.941 [main] INFO  com.currentweather.utils.LogHelper - 1. Send Get request to the server with city = London+US and sate name = UKK
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:00.066 [main] INFO  com.currentweather.utils.LogHelper - 2. Get content type of api
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:00.067 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify content type is default JSON 
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:00.068 [main] INFO  com.currentweather.utils.LogHelper - 3. Get the response status code
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:00.068 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response status code is 200
+</span>
+                <span class="reporter-method-output"></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TC_API_0004_Get_current_weather_data_with_INVALID_CityName_and_StateCode({InvalidStateCode=, InvalidCityName=California@#$%@#$%})</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">11:31:00.172 [main] INFO  com.currentweather.utils.LogHelper - 1. Send Get request to the server with city = California@#$%@#$% and sate name = 
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:00.376 [main] INFO  com.currentweather.utils.LogHelper - 2. Get content type of api
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:00.377 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify content type is default JSON 
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:00.377 [main] INFO  com.currentweather.utils.LogHelper - 3. Get the response status code
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:00.377 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response status code is 200
+</span>
+                <span class="reporter-method-output"></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TC_API_0003_Get_current_weather_data_with_VALID_CityName_and_StateCode({ExpectedCOD=200, ExpectedLon=151.6667, ExpectedLat=-32.95, StateCode=, ExpectedID=2171766, CityName...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">11:30:59.290 [main] INFO  com.currentweather.utils.LogHelper - 1. Send Get request to the server with city = Charlestown and sate name = 
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:59.432 [main] INFO  com.currentweather.utils.LogHelper - 2. Get content type of api
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:59.434 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify content type is default JSON 
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:59.435 [main] INFO  com.currentweather.utils.LogHelper - 3. Get the response status code
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:59.435 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response status code is 200
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:59.435 [main] INFO  com.currentweather.utils.LogHelper - 4. Get response body
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:59.436 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly longitude
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:59.453 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly latitude
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:59.465 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly location id
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:59.486 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly location name
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:59.506 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly location cod
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:59.523 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly country
+</span>
+                <span class="reporter-method-output"></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TC_API_0003_Get_current_weather_data_with_VALID_CityName_and_StateCode({ExpectedCOD=200, ExpectedLon=45.0675, ExpectedLat=37.6747, StateCode=IR, ExpectedID=18557, CityName...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">11:30:59.538 [main] INFO  com.currentweather.utils.LogHelper - 1. Send Get request to the server with city = Qarālar-e Mīrzā Ḩoseynqolī and sate name = IR
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:59.682 [main] INFO  com.currentweather.utils.LogHelper - 2. Get content type of api
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:59.685 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify content type is default JSON 
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:59.686 [main] INFO  com.currentweather.utils.LogHelper - 3. Get the response status code
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:59.686 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response status code is 200
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:59.686 [main] INFO  com.currentweather.utils.LogHelper - 4. Get response body
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:59.689 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly longitude
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:59.731 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly latitude
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:59.764 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly location id
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:59.781 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly location name
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:59.795 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly location cod
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:59.807 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly country
+</span>
+                <span class="reporter-method-output"></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TC_API_0003_Get_current_weather_data_with_VALID_CityName_and_StateCode({ExpectedCOD=200, ExpectedLon=-76.5074, ExpectedLat=38.3004, StateCode=US, ExpectedID=4350049, CityN...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">11:30:59.088 [main] INFO  com.currentweather.utils.LogHelper - 1. Send Get request to the server with city = California and sate name = US
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:59.152 [main] INFO  com.currentweather.utils.LogHelper - 2. Get content type of api
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:59.153 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify content type is default JSON 
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:59.153 [main] INFO  com.currentweather.utils.LogHelper - 3. Get the response status code
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:59.153 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response status code is 200
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:59.153 [main] INFO  com.currentweather.utils.LogHelper - 4. Get response body
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:59.154 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly longitude
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:59.171 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly latitude
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:59.184 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly location id
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:59.197 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly location name
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:59.244 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly location cod
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:59.262 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly country
+</span>
+                <span class="reporter-method-output"></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TC_API_0004_Get_current_weather_data_with_INVALID_CityName_and_StateCode({InvalidStateCode=USS, InvalidCityName=FASDFAS})</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">11:31:00.068 [main] INFO  com.currentweather.utils.LogHelper - 1. Send Get request to the server with city = FASDFAS and sate name = USS
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:00.171 [main] INFO  com.currentweather.utils.LogHelper - 2. Get content type of api
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:00.171 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify content type is default JSON 
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:00.172 [main] INFO  com.currentweather.utils.LogHelper - 3. Get the response status code
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:00.172 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response status code is 200
+</span>
+                <span class="reporter-method-output"></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TC_API_0004_Get_current_weather_data_with_INVALID_CityName_and_StateCode({InvalidStateCode=IR, InvalidCityName=Qarālar-e Mīrzā Ḩoseynqolīa!@#})</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">11:31:00.511 [main] INFO  com.currentweather.utils.LogHelper - 1. Send Get request to the server with city = Qarālar-e Mīrzā Ḩoseynqolīa!@# and sate name = IR
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:00.597 [main] INFO  com.currentweather.utils.LogHelper - 2. Get content type of api
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:00.597 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify content type is default JSON 
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:00.597 [main] INFO  com.currentweather.utils.LogHelper - 3. Get the response status code
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:00.597 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response status code is 200
+</span>
+                <span class="reporter-method-output"></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TC_API_0003_Get_current_weather_data_with_VALID_CityName_and_StateCode({ExpectedCOD=200, ExpectedLon=-0.1257, ExpectedLat=51.5085, StateCode=UK, ExpectedID=2643743, CityNa...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">11:30:58.575 [main] INFO  com.currentweather.utils.LogHelper - 1. Send Get request to the server with city = London and sate name = UK
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:58.680 [main] INFO  com.currentweather.utils.LogHelper - 2. Get content type of api
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:58.680 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify content type is default JSON 
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:58.680 [main] INFO  com.currentweather.utils.LogHelper - 3. Get the response status code
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:58.680 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response status code is 200
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:58.680 [main] INFO  com.currentweather.utils.LogHelper - 4. Get response body
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:58.681 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly longitude
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:58.695 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly latitude
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:58.721 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly location id
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:58.760 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly location name
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:58.786 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly location cod
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:58.813 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly country
+</span>
+                <span class="reporter-method-output"></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TC_API_0003_Get_current_weather_data_with_VALID_CityName_and_StateCode({ExpectedCOD=200, ExpectedLon=-83.4483, ExpectedLat=39.8865, StateCode=US, ExpectedID=4517009, CityN...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">11:30:58.825 [main] INFO  com.currentweather.utils.LogHelper - 1. Send Get request to the server with city = London and sate name = US
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:58.994 [main] INFO  com.currentweather.utils.LogHelper - 2. Get content type of api
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:58.995 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify content type is default JSON 
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:58.995 [main] INFO  com.currentweather.utils.LogHelper - 3. Get the response status code
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:58.995 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response status code is 200
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:58.995 [main] INFO  com.currentweather.utils.LogHelper - 4. Get response body
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:58.996 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly longitude
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:59.018 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly latitude
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:59.034 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly location id
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:59.047 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly location name
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:59.057 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly location cod
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:30:59.074 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly country
+</span>
+                <span class="reporter-method-output"></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TC_API_0004_Get_current_weather_data_with_INVALID_CityName_and_StateCode({InvalidStateCode=US,US, InvalidCityName=})</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">11:31:00.378 [main] INFO  com.currentweather.utils.LogHelper - 1. Send Get request to the server with city =  and sate name = US,US
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:00.500 [main] INFO  com.currentweather.utils.LogHelper - 2. Get content type of api
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:00.501 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify content type is default JSON 
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:00.501 [main] INFO  com.currentweather.utils.LogHelper - 3. Get the response status code
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:00.501 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response status code is 200
+</span>
+                <span class="reporter-method-output"></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TC_API_0006_Get_current_weather_data_with_INVALID_CityName_and_StateCode_and_CountryCode({InvalidStateCode=, InvaliCityName=Californiaddfg, InvalidCountryCode=})</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">11:31:02.338 [main] INFO  com.currentweather.utils.LogHelper - 1. Send Get request to the server with city = null and sate name = and country code = 
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:02.444 [main] INFO  com.currentweather.utils.LogHelper - 2. Get content type of api
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:02.445 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify content type is default JSON 
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:02.445 [main] INFO  com.currentweather.utils.LogHelper - 3. Get the response status code
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:02.445 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response status code is 200
+</span>
+                <span class="reporter-method-output"></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TC_API_0005_Get_current_weather_data_with_VALID_CityName_and_StateCode_and_CountryCode({ExpectedCOD=200, ExpectedLon=45.0675, ExpectedLat=37.6747, StateCode=, ExpectedID=18557, CityName=Q...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">11:31:01.820 [main] INFO  com.currentweather.utils.LogHelper - 1. Send Get request to the server with city = Qarālar-e Mīrzā Ḩoseynqolī and sate name = and country code = IR
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:01.916 [main] INFO  com.currentweather.utils.LogHelper - 2. Get content type of api
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:01.917 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify content type is default JSON 
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:01.917 [main] INFO  com.currentweather.utils.LogHelper - 3. Get the response status code
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:01.917 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response status code is 200
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:01.917 [main] INFO  com.currentweather.utils.LogHelper - 4. Get response body
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:01.918 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly longitude
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:01.927 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly latitude
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:01.939 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly location id
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:01.947 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly location name
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:01.965 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly location cod
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:01.979 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly country
+</span>
+                <span class="reporter-method-output"></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TC_API_0006_Get_current_weather_data_with_INVALID_CityName_and_StateCode_and_CountryCode({InvalidStateCode=, InvaliCityName=1.2341234E7, InvalidCountryCode=US})</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">11:31:02.445 [main] INFO  com.currentweather.utils.LogHelper - 1. Send Get request to the server with city = null and sate name = and country code = US
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:02.535 [main] INFO  com.currentweather.utils.LogHelper - 2. Get content type of api
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:02.535 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify content type is default JSON 
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:02.535 [main] INFO  com.currentweather.utils.LogHelper - 3. Get the response status code
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:02.535 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response status code is 200
+</span>
+                <span class="reporter-method-output"></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TC_API_0005_Get_current_weather_data_with_VALID_CityName_and_StateCode_and_CountryCode({ExpectedCOD=200, ExpectedLon=-75.9497, ExpectedLat=39.5668, StateCode=US, ExpectedID=4350685, CityN...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">11:31:01.615 [main] INFO  com.currentweather.utils.LogHelper - 1. Send Get request to the server with city = Cecil County and sate name = USand country code = 
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:01.721 [main] INFO  com.currentweather.utils.LogHelper - 2. Get content type of api
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:01.721 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify content type is default JSON 
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:01.722 [main] INFO  com.currentweather.utils.LogHelper - 3. Get the response status code
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:01.722 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response status code is 200
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:01.722 [main] INFO  com.currentweather.utils.LogHelper - 4. Get response body
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:01.723 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly longitude
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:01.735 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly latitude
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:01.757 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly location id
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:01.777 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly location name
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:01.790 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly location cod
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:01.800 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly country
+</span>
+                <span class="reporter-method-output"></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TC_API_0006_Get_current_weather_data_with_INVALID_CityName_and_StateCode_and_CountryCode({InvalidStateCode=, InvaliCityName=Qarālar-e Mīrzā Ḩoseynqolī, InvalidCountryCode=IR,RI})</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">11:31:02.629 [main] INFO  com.currentweather.utils.LogHelper - 1. Send Get request to the server with city = null and sate name = and country code = IR,RI
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:02.705 [main] INFO  com.currentweather.utils.LogHelper - 2. Get content type of api
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:02.706 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify content type is default JSON 
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:02.706 [main] INFO  com.currentweather.utils.LogHelper - 3. Get the response status code
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:02.706 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response status code is 200
+</span>
+                <span class="reporter-method-output"></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TC_API_0006_Get_current_weather_data_with_INVALID_CityName_and_StateCode_and_CountryCode({InvalidStateCode=MD,MD, InvaliCityName=Bel Air^&$%^&, InvalidCountryCode=US,US})</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">11:31:02.104 [main] INFO  com.currentweather.utils.LogHelper - 1. Send Get request to the server with city = null and sate name = MD,MDand country code = US,US
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:02.181 [main] INFO  com.currentweather.utils.LogHelper - 2. Get content type of api
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:02.181 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify content type is default JSON 
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:02.181 [main] INFO  com.currentweather.utils.LogHelper - 3. Get the response status code
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:02.181 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response status code is 200
+</span>
+                <span class="reporter-method-output"></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TC_API_0005_Get_current_weather_data_with_VALID_CityName_and_StateCode_and_CountryCode({ExpectedCOD=200, ExpectedLon=-77.073, ExpectedLat=38.6271, StateCode=, ExpectedID=4349727, CityName...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">11:31:01.361 [main] INFO  com.currentweather.utils.LogHelper - 1. Send Get request to the server with city = Bryans Road and sate name = and country code = US
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:01.532 [main] INFO  com.currentweather.utils.LogHelper - 2. Get content type of api
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:01.532 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify content type is default JSON 
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:01.533 [main] INFO  com.currentweather.utils.LogHelper - 3. Get the response status code
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:01.533 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response status code is 200
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:01.533 [main] INFO  com.currentweather.utils.LogHelper - 4. Get response body
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:01.534 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly longitude
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:01.548 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly latitude
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:01.563 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly location id
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:01.575 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly location name
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:01.587 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly location cod
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:01.599 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly country
+</span>
+                <span class="reporter-method-output"></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TC_API_0005_Get_current_weather_data_with_VALID_CityName_and_StateCode_and_CountryCode({ExpectedCOD=200, ExpectedLon=-76.3483, ExpectedLat=39.5359, StateCode=MD, ExpectedID=4348240, CityN...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">11:31:00.682 [main] INFO  com.currentweather.utils.LogHelper - 1. Send Get request to the server with city = Bel Air and sate name = MDand country code = US
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:00.821 [main] INFO  com.currentweather.utils.LogHelper - 2. Get content type of api
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:00.823 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify content type is default JSON 
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:00.824 [main] INFO  com.currentweather.utils.LogHelper - 3. Get the response status code
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:00.825 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response status code is 200
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:00.825 [main] INFO  com.currentweather.utils.LogHelper - 4. Get response body
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:00.826 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly longitude
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:00.841 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly latitude
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:00.849 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly location id
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:00.861 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly location name
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:00.868 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly location cod
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:00.877 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly country
+</span>
+                <span class="reporter-method-output"></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TC_API_0005_Get_current_weather_data_with_VALID_CityName_and_StateCode_and_CountryCode({ExpectedCOD=200, ExpectedLon=-0.1257, ExpectedLat=51.5085, StateCode=US, ExpectedID=2643743, CityNa...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">11:31:00.887 [main] INFO  com.currentweather.utils.LogHelper - 1. Send Get request to the server with city = London and sate name = USand country code = GB
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:00.960 [main] INFO  com.currentweather.utils.LogHelper - 2. Get content type of api
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:00.960 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify content type is default JSON 
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:00.960 [main] INFO  com.currentweather.utils.LogHelper - 3. Get the response status code
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:00.960 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response status code is 200
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:00.960 [main] INFO  com.currentweather.utils.LogHelper - 4. Get response body
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:00.963 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly longitude
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:00.978 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly latitude
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:00.988 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly location id
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:00.997 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly location name
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:01.039 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly location cod
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:01.062 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly country
+</span>
+                <span class="reporter-method-output"></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TC_API_0006_Get_current_weather_data_with_INVALID_CityName_and_StateCode_and_CountryCode({InvalidStateCode=US, InvaliCityName=Cecil County, InvalidCountryCode=45345.0})</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">11:31:02.536 [main] INFO  com.currentweather.utils.LogHelper - 1. Send Get request to the server with city = null and sate name = USand country code = 45345.0
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:02.628 [main] INFO  com.currentweather.utils.LogHelper - 2. Get content type of api
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:02.628 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify content type is default JSON 
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:02.628 [main] INFO  com.currentweather.utils.LogHelper - 3. Get the response status code
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:02.629 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response status code is 200
+</span>
+                <span class="reporter-method-output"></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TC_API_0006_Get_current_weather_data_with_INVALID_CityName_and_StateCode_and_CountryCode({InvalidStateCode=US,US, InvaliCityName=, InvalidCountryCode=GB,GB})</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">11:31:02.182 [main] INFO  com.currentweather.utils.LogHelper - 1. Send Get request to the server with city = null and sate name = US,USand country code = GB,GB
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:02.336 [main] INFO  com.currentweather.utils.LogHelper - 2. Get content type of api
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:02.336 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify content type is default JSON 
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:02.336 [main] INFO  com.currentweather.utils.LogHelper - 3. Get the response status code
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:02.337 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response status code is 200
+</span>
+                <span class="reporter-method-output"></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TC_API_0005_Get_current_weather_data_with_VALID_CityName_and_StateCode_and_CountryCode({ExpectedCOD=200, ExpectedLon=-76.5074, ExpectedLat=38.3004, StateCode=MD, ExpectedID=4350049, CityN...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">11:31:01.091 [main] INFO  com.currentweather.utils.LogHelper - 1. Send Get request to the server with city = California and sate name = MDand country code = US
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:01.208 [main] INFO  com.currentweather.utils.LogHelper - 2. Get content type of api
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:01.208 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify content type is default JSON 
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:01.209 [main] INFO  com.currentweather.utils.LogHelper - 3. Get the response status code
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:01.209 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response status code is 200
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:01.209 [main] INFO  com.currentweather.utils.LogHelper - 4. Get response body
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:01.210 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly longitude
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:01.227 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly latitude
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:01.240 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly location id
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:01.263 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly location name
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:01.281 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly location cod
+</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">11:31:01.339 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly country
+</span>
+                <span class="reporter-method-output"></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-SmokeTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-All_API_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-SmokeTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-All_API_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.currentweather.api.TC_API_0001_Get_current_weather_data_with_VALID_CityName</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeSuite(org.testng.TestRunner@6d11ceef)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">TC_API_0001_Get_current_weather_data_with_VALID_CityName({ExpectedCOD=200, ExpectedLon=-0.1257, ExpectedLat=51.5085, ExpectedID=2643743, CityName=London, Exp...)</span>
+                <span class="method-start">2243 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_API_0001_Get_current_weather_data_with_VALID_CityName({ExpectedCOD=200, ExpectedLon=13.2396, ExpectedLat=56.9989, ExpectedID=2704008, CityName=Hyltebruk, ...)</span>
+                <span class="method-start">6090 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_API_0001_Get_current_weather_data_with_VALID_CityName({ExpectedCOD=200, ExpectedLon=-76.5074, ExpectedLat=38.3004, ExpectedID=4350049, CityName=California...)</span>
+                <span class="method-start">6482 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_API_0001_Get_current_weather_data_with_VALID_CityName({ExpectedCOD=200, ExpectedLon=45.0675, ExpectedLat=37.6747, ExpectedID=18557, CityName=Qarālar-e Mīr...)</span>
+                <span class="method-start">6746 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.currentweather.api.TC_API_0002_Get_current_weather_data_with_INVALID_CityName</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeSuite(org.testng.TestRunner@6d11ceef)</span>
+                <span class="method-start">7011 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">TC_API_0002_Get_current_weather_data_with_INVALID_CityName({InvalidCityName=London+US})</span>
+                <span class="method-start">7096 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_API_0002_Get_current_weather_data_with_INVALID_CityName({InvalidCityName=testingforlongcharacter#@$%@#$%@#$%})</span>
+                <span class="method-start">7203 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_API_0002_Get_current_weather_data_with_INVALID_CityName({InvalidCityName=NULL})</span>
+                <span class="method-start">7320 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_API_0002_Get_current_weather_data_with_INVALID_CityName({InvalidCityName=2342345.0})</span>
+                <span class="method-start">7433 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_API_0002_Get_current_weather_data_with_INVALID_CityName({InvalidCityName=12#!@$})</span>
+                <span class="method-start">7546 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_API_0002_Get_current_weather_data_with_INVALID_CityName({InvalidCityName=Lodon@gmail.com})</span>
+                <span class="method-start">7645 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.currentweather.api.TC_API_0003_Get_current_weather_data_with_VALID_CityName_and_StateCode</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeSuite(org.testng.TestRunner@4cb2918c)</span>
+                <span class="method-start">8060 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">TC_API_0003_Get_current_weather_data_with_VALID_CityName_and_StateCode({ExpectedCOD=200, ExpectedLon=-0.1257, ExpectedLat=51.5085, StateCode=UK, ExpectedID=2643743, CityNa...)</span>
+                <span class="method-start">8144 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_API_0003_Get_current_weather_data_with_VALID_CityName_and_StateCode({ExpectedCOD=200, ExpectedLon=-83.4483, ExpectedLat=39.8865, StateCode=US, ExpectedID=4517009, CityN...)</span>
+                <span class="method-start">8395 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_API_0003_Get_current_weather_data_with_VALID_CityName_and_StateCode({ExpectedCOD=200, ExpectedLon=-76.5074, ExpectedLat=38.3004, StateCode=US, ExpectedID=4350049, CityN...)</span>
+                <span class="method-start">8657 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_API_0003_Get_current_weather_data_with_VALID_CityName_and_StateCode({ExpectedCOD=200, ExpectedLon=151.6667, ExpectedLat=-32.95, StateCode=, ExpectedID=2171766, CityName...)</span>
+                <span class="method-start">8860 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_API_0003_Get_current_weather_data_with_VALID_CityName_and_StateCode({ExpectedCOD=200, ExpectedLon=45.0675, ExpectedLat=37.6747, StateCode=IR, ExpectedID=18557, CityName...)</span>
+                <span class="method-start">9107 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.currentweather.api.TC_API_0004_Get_current_weather_data_with_INVALID_CityName_and_StateCode</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeSuite(org.testng.TestRunner@4cb2918c)</span>
+                <span class="method-start">9391 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">TC_API_0004_Get_current_weather_data_with_INVALID_CityName_and_StateCode({InvalidStateCode=UKK, InvalidCityName=London+US})</span>
+                <span class="method-start">9510 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_API_0004_Get_current_weather_data_with_INVALID_CityName_and_StateCode({InvalidStateCode=USS, InvalidCityName=FASDFAS})</span>
+                <span class="method-start">9638 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_API_0004_Get_current_weather_data_with_INVALID_CityName_and_StateCode({InvalidStateCode=, InvalidCityName=California@#$%@#$%})</span>
+                <span class="method-start">9742 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC_API_0004_Get_current_weather_data_with_INVALID_CityName_and_StateCode({InvalidStateCode=US,US, InvalidCityName=})</span>
+                <span class="method-start">9947 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_API_0004_Get_current_weather_data_with_INVALID_CityName_and_StateCode({InvalidStateCode=IR, InvalidCityName=Qarālar-e Mīrzā Ḩoseynqolīa!@#})</span>
+                <span class="method-start">10080 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.currentweather.api.TC_API_0005_Get_current_weather_data_with_VALID_CityName_and_StateCode_and_CountryCode</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeSuite(org.testng.TestRunner@72e295cc)</span>
+                <span class="method-start">10184 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">TC_API_0005_Get_current_weather_data_with_VALID_CityName_and_StateCode_and_CountryCode({ExpectedCOD=200, ExpectedLon=-76.3483, ExpectedLat=39.5359, StateCode=MD, ExpectedID=4348240, CityN...)</span>
+                <span class="method-start">10250 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_API_0005_Get_current_weather_data_with_VALID_CityName_and_StateCode_and_CountryCode({ExpectedCOD=200, ExpectedLon=-0.1257, ExpectedLat=51.5085, StateCode=US, ExpectedID=2643743, CityNa...)</span>
+                <span class="method-start">10456 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_API_0005_Get_current_weather_data_with_VALID_CityName_and_StateCode_and_CountryCode({ExpectedCOD=200, ExpectedLon=-76.5074, ExpectedLat=38.3004, StateCode=MD, ExpectedID=4350049, CityN...)</span>
+                <span class="method-start">10661 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_API_0005_Get_current_weather_data_with_VALID_CityName_and_StateCode_and_CountryCode({ExpectedCOD=200, ExpectedLon=-77.073, ExpectedLat=38.6271, StateCode=, ExpectedID=4349727, CityName...)</span>
+                <span class="method-start">10931 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_API_0005_Get_current_weather_data_with_VALID_CityName_and_StateCode_and_CountryCode({ExpectedCOD=200, ExpectedLon=-75.9497, ExpectedLat=39.5668, StateCode=US, ExpectedID=4350685, CityN...)</span>
+                <span class="method-start">11184 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_API_0005_Get_current_weather_data_with_VALID_CityName_and_StateCode_and_CountryCode({ExpectedCOD=200, ExpectedLon=45.0675, ExpectedLat=37.6747, StateCode=, ExpectedID=18557, CityName=Q...)</span>
+                <span class="method-start">11389 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.currentweather.api.TC_API_0006_Get_current_weather_data_with_INVALID_CityName_and_StateCode_and_CountryCode</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeSuite(org.testng.TestRunner@72e295cc)</span>
+                <span class="method-start">11581 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">TC_API_0006_Get_current_weather_data_with_INVALID_CityName_and_StateCode_and_CountryCode({InvalidStateCode=MD,MD, InvaliCityName=Bel Air^&$%^&, InvalidCountryCode=US,US})</span>
+                <span class="method-start">11674 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_API_0006_Get_current_weather_data_with_INVALID_CityName_and_StateCode_and_CountryCode({InvalidStateCode=US,US, InvaliCityName=, InvalidCountryCode=GB,GB})</span>
+                <span class="method-start">11752 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_API_0006_Get_current_weather_data_with_INVALID_CityName_and_StateCode_and_CountryCode({InvalidStateCode=, InvaliCityName=Californiaddfg, InvalidCountryCode=})</span>
+                <span class="method-start">11907 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_API_0006_Get_current_weather_data_with_INVALID_CityName_and_StateCode_and_CountryCode({InvalidStateCode=, InvaliCityName=1.2341234E7, InvalidCountryCode=US})</span>
+                <span class="method-start">12015 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_API_0006_Get_current_weather_data_with_INVALID_CityName_and_StateCode_and_CountryCode({InvalidStateCode=US, InvaliCityName=Cecil County, InvalidCountryCode=45345.0})</span>
+                <span class="method-start">12106 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_API_0006_Get_current_weather_data_with_INVALID_CityName_and_StateCode_and_CountryCode({InvalidStateCode=, InvaliCityName=Qarālar-e Mīrzā Ḩoseynqolī, InvalidCountryCode=IR,RI})</span>
+                <span class="method-start">12199 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

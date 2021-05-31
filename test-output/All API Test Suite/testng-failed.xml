@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [All API Test Suite]">
+  <test thread-count="5" name="Get current data for one location by City Name and State Code(failed)">
+    <classes>
+      <class name="com.currentweather.api.TC_API_0004_Get_current_weather_data_with_INVALID_CityName_and_StateCode">
+        <methods>
+          <include name="TC_API_0004_Get_current_weather_data_with_INVALID_CityName_and_StateCode" invocation-numbers="3"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- com.currentweather.api.TC_API_0004_Get_current_weather_data_with_INVALID_CityName_and_StateCode -->
+    </classes>
+  </test> <!-- Get current data for one location by City Name and State Code(failed) -->
+</suite> <!-- Failed suite [All API Test Suite] -->

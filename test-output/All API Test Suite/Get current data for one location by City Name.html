@@ -1,0 +1,423 @@
+<html>
+<head>
+<title>TestNG:  Get current data for one location by City Name</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Get current data for one location by City Name</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>10/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon May 31 11:30:50 ICT 2021</td>
+</tr>
+<tr><td>Total time:</td><td>7 seconds (7835 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.currentweather.api.TC_API_0001_Get_current_weather_data_with_VALID_CityName.TC_API_0001_Get_current_weather_data_with_VALID_CityName()'><b>TC_API_0001_Get_current_weather_data_with_VALID_CityName</b><br>Test class: com.currentweather.api.TC_API_0001_Get_current_weather_data_with_VALID_CityName<br>Parameters: {ExpectedCOD=200, ExpectedLon=-0.1257, ExpectedLat=51.5085, ExpectedID=2643743, CityName=London, ExpectedName=London, ExpectedCountry=GB}<br/>
+<a href="#Output-510276116" onClick='toggleBox("Output-510276116", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-510276116" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-510276116">
+11:30:52.680 [main] INFO  com.currentweather.utils.LogHelper - 1. Send Get request to the server with city = London
+<br/>
+<br/>
+11:30:55.437 [main] INFO  com.currentweather.utils.LogHelper - 2. Get content type of api
+<br/>
+<br/>
+11:30:55.437 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify content type is default JSON 
+<br/>
+<br/>
+11:30:55.440 [main] INFO  com.currentweather.utils.LogHelper - 3. Get the response status code
+<br/>
+<br/>
+11:30:55.441 [main] INFO  com.currentweather.utils.LogHelper - Validation Point: Verify response status code is 200
+<br/>
+<br/>
+11:30:55.441 [main] INFO  com.currentweather.utils.LogHelper - 4. Get response body
+<br/>
+<br/>
+11:30:55.522 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly longitude
+<br/>
+<br/>
+11:30:56.416 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly latitude
+<br/>
+<br/>
+11:30:56.434 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly location id
+<br/>
+<br/>
+11:30:56.449 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly location name
+<br/>
+<br/>
+11:30:56.466 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly location cod
+<br/>
+<br/>
+11:30:56.483 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly country
+<br/>
+<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>com.currentweather.api.TC_API_0001_Get_current_weather_data_with_VALID_CityName@3234e239</td></tr>
+<tr>
+<td title='com.currentweather.api.TC_API_0001_Get_current_weather_data_with_VALID_CityName.TC_API_0001_Get_current_weather_data_with_VALID_CityName()'><b>TC_API_0001_Get_current_weather_data_with_VALID_CityName</b><br>Test class: com.currentweather.api.TC_API_0001_Get_current_weather_data_with_VALID_CityName<br>Parameters: {ExpectedCOD=200, ExpectedLon=13.2396, ExpectedLat=56.9989, ExpectedID=2704008, CityName=Hyltebruk, ExpectedName=Hyltebruk, ExpectedCountry=SE}<br/>
+<a href="#Output-2078741622" onClick='toggleBox("Output-2078741622", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2078741622" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2078741622">
+11:30:56.521 [main] INFO  com.currentweather.utils.LogHelper - 1. Send Get request to the server with city = Hyltebruk
+<br/>
+<br/>
+11:30:56.817 [main] INFO  com.currentweather.utils.LogHelper - 2. Get content type of api
+<br/>
+<br/>
+11:30:56.817 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify content type is default JSON 
+<br/>
+<br/>
+11:30:56.818 [main] INFO  com.currentweather.utils.LogHelper - 3. Get the response status code
+<br/>
+<br/>
+11:30:56.818 [main] INFO  com.currentweather.utils.LogHelper - Validation Point: Verify response status code is 200
+<br/>
+<br/>
+11:30:56.818 [main] INFO  com.currentweather.utils.LogHelper - 4. Get response body
+<br/>
+<br/>
+11:30:56.819 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly longitude
+<br/>
+<br/>
+11:30:56.845 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly latitude
+<br/>
+<br/>
+11:30:56.860 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly location id
+<br/>
+<br/>
+11:30:56.874 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly location name
+<br/>
+<br/>
+11:30:56.887 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly location cod
+<br/>
+<br/>
+11:30:56.900 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly country
+<br/>
+<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.currentweather.api.TC_API_0001_Get_current_weather_data_with_VALID_CityName@3234e239</td></tr>
+<tr>
+<td title='com.currentweather.api.TC_API_0001_Get_current_weather_data_with_VALID_CityName.TC_API_0001_Get_current_weather_data_with_VALID_CityName()'><b>TC_API_0001_Get_current_weather_data_with_VALID_CityName</b><br>Test class: com.currentweather.api.TC_API_0001_Get_current_weather_data_with_VALID_CityName<br>Parameters: {ExpectedCOD=200, ExpectedLon=-76.5074, ExpectedLat=38.3004, ExpectedID=4350049, CityName=California, ExpectedName=California, ExpectedCountry=US}<br/>
+<a href="#Output-1579823168" onClick='toggleBox("Output-1579823168", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1579823168" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1579823168">
+11:30:56.913 [main] INFO  com.currentweather.utils.LogHelper - 1. Send Get request to the server with city = California
+<br/>
+<br/>
+11:30:57.021 [main] INFO  com.currentweather.utils.LogHelper - 2. Get content type of api
+<br/>
+<br/>
+11:30:57.021 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify content type is default JSON 
+<br/>
+<br/>
+11:30:57.021 [main] INFO  com.currentweather.utils.LogHelper - 3. Get the response status code
+<br/>
+<br/>
+11:30:57.022 [main] INFO  com.currentweather.utils.LogHelper - Validation Point: Verify response status code is 200
+<br/>
+<br/>
+11:30:57.022 [main] INFO  com.currentweather.utils.LogHelper - 4. Get response body
+<br/>
+<br/>
+11:30:57.023 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly longitude
+<br/>
+<br/>
+11:30:57.059 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly latitude
+<br/>
+<br/>
+11:30:57.091 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly location id
+<br/>
+<br/>
+11:30:57.120 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly location name
+<br/>
+<br/>
+11:30:57.141 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly location cod
+<br/>
+<br/>
+11:30:57.157 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly country
+<br/>
+<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.currentweather.api.TC_API_0001_Get_current_weather_data_with_VALID_CityName@3234e239</td></tr>
+<tr>
+<td title='com.currentweather.api.TC_API_0001_Get_current_weather_data_with_VALID_CityName.TC_API_0001_Get_current_weather_data_with_VALID_CityName()'><b>TC_API_0001_Get_current_weather_data_with_VALID_CityName</b><br>Test class: com.currentweather.api.TC_API_0001_Get_current_weather_data_with_VALID_CityName<br>Parameters: {ExpectedCOD=200, ExpectedLon=45.0675, ExpectedLat=37.6747, ExpectedID=18557, CityName=Qarālar-e Mīrzā Ḩoseynqolī, ExpectedName=Qarālar-e Mīrzā Ḩoseynqolī, ExpectedCountry=IR}<br/>
+<a href="#Output-934223763" onClick='toggleBox("Output-934223763", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-934223763" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-934223763">
+11:30:57.176 [main] INFO  com.currentweather.utils.LogHelper - 1. Send Get request to the server with city = Qarālar-e Mīrzā Ḩoseynqolī
+<br/>
+<br/>
+11:30:57.317 [main] INFO  com.currentweather.utils.LogHelper - 2. Get content type of api
+<br/>
+<br/>
+11:30:57.317 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify content type is default JSON 
+<br/>
+<br/>
+11:30:57.317 [main] INFO  com.currentweather.utils.LogHelper - 3. Get the response status code
+<br/>
+<br/>
+11:30:57.317 [main] INFO  com.currentweather.utils.LogHelper - Validation Point: Verify response status code is 200
+<br/>
+<br/>
+11:30:57.317 [main] INFO  com.currentweather.utils.LogHelper - 4. Get response body
+<br/>
+<br/>
+11:30:57.319 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly longitude
+<br/>
+<br/>
+11:30:57.353 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly latitude
+<br/>
+<br/>
+11:30:57.372 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly location id
+<br/>
+<br/>
+11:30:57.388 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly location name
+<br/>
+<br/>
+11:30:57.403 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly location cod
+<br/>
+<br/>
+11:30:57.414 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response body returns correctly country
+<br/>
+<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.currentweather.api.TC_API_0001_Get_current_weather_data_with_VALID_CityName@3234e239</td></tr>
+<tr>
+<td title='com.currentweather.api.TC_API_0002_Get_current_weather_data_with_INVALID_CityName.TC_API_0002_Get_current_weather_data_with_INVALID_CityName()'><b>TC_API_0002_Get_current_weather_data_with_INVALID_CityName</b><br>Test class: com.currentweather.api.TC_API_0002_Get_current_weather_data_with_INVALID_CityName<br>Parameters: {InvalidCityName=London+US}<br/>
+<a href="#Output-244190700" onClick='toggleBox("Output-244190700", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-244190700" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-244190700">
+11:30:57.526 [main] INFO  com.currentweather.utils.LogHelper - 1. Send Get request to the server with city = London+US
+<br/>
+<br/>
+11:30:57.631 [main] INFO  com.currentweather.utils.LogHelper - 2. Get content type of api
+<br/>
+<br/>
+11:30:57.631 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify content type is default JSON 
+<br/>
+<br/>
+11:30:57.632 [main] INFO  com.currentweather.utils.LogHelper - 3. Get the response status code
+<br/>
+<br/>
+11:30:57.632 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response status code is 200
+<br/>
+<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.currentweather.api.TC_API_0002_Get_current_weather_data_with_INVALID_CityName@3d921e20</td></tr>
+<tr>
+<td title='com.currentweather.api.TC_API_0002_Get_current_weather_data_with_INVALID_CityName.TC_API_0002_Get_current_weather_data_with_INVALID_CityName()'><b>TC_API_0002_Get_current_weather_data_with_INVALID_CityName</b><br>Test class: com.currentweather.api.TC_API_0002_Get_current_weather_data_with_INVALID_CityName<br>Parameters: {InvalidCityName=testingforlongcharacter#@$%@#$%@#$%}<br/>
+<a href="#Output-69670055" onClick='toggleBox("Output-69670055", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-69670055" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-69670055">
+11:30:57.633 [main] INFO  com.currentweather.utils.LogHelper - 1. Send Get request to the server with city = testingforlongcharacter#@$%@#$%@#$%
+<br/>
+<br/>
+11:30:57.744 [main] INFO  com.currentweather.utils.LogHelper - 2. Get content type of api
+<br/>
+<br/>
+11:30:57.745 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify content type is default JSON 
+<br/>
+<br/>
+11:30:57.748 [main] INFO  com.currentweather.utils.LogHelper - 3. Get the response status code
+<br/>
+<br/>
+11:30:57.749 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response status code is 200
+<br/>
+<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.currentweather.api.TC_API_0002_Get_current_weather_data_with_INVALID_CityName@3d921e20</td></tr>
+<tr>
+<td title='com.currentweather.api.TC_API_0002_Get_current_weather_data_with_INVALID_CityName.TC_API_0002_Get_current_weather_data_with_INVALID_CityName()'><b>TC_API_0002_Get_current_weather_data_with_INVALID_CityName</b><br>Test class: com.currentweather.api.TC_API_0002_Get_current_weather_data_with_INVALID_CityName<br>Parameters: {InvalidCityName=NULL}<br/>
+<a href="#Output-2089786414" onClick='toggleBox("Output-2089786414", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2089786414" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2089786414">
+11:30:57.750 [main] INFO  com.currentweather.utils.LogHelper - 1. Send Get request to the server with city = NULL
+<br/>
+<br/>
+11:30:57.862 [main] INFO  com.currentweather.utils.LogHelper - 2. Get content type of api
+<br/>
+<br/>
+11:30:57.862 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify content type is default JSON 
+<br/>
+<br/>
+11:30:57.863 [main] INFO  com.currentweather.utils.LogHelper - 3. Get the response status code
+<br/>
+<br/>
+11:30:57.863 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response status code is 200
+<br/>
+<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.currentweather.api.TC_API_0002_Get_current_weather_data_with_INVALID_CityName@3d921e20</td></tr>
+<tr>
+<td title='com.currentweather.api.TC_API_0002_Get_current_weather_data_with_INVALID_CityName.TC_API_0002_Get_current_weather_data_with_INVALID_CityName()'><b>TC_API_0002_Get_current_weather_data_with_INVALID_CityName</b><br>Test class: com.currentweather.api.TC_API_0002_Get_current_weather_data_with_INVALID_CityName<br>Parameters: {InvalidCityName=2342345.0}<br/>
+<a href="#Output-2082353865" onClick='toggleBox("Output-2082353865", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2082353865" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2082353865">
+11:30:57.864 [main] INFO  com.currentweather.utils.LogHelper - 1. Send Get request to the server with city = 2342345.0
+<br/>
+<br/>
+11:30:57.973 [main] INFO  com.currentweather.utils.LogHelper - 2. Get content type of api
+<br/>
+<br/>
+11:30:57.974 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify content type is default JSON 
+<br/>
+<br/>
+11:30:57.974 [main] INFO  com.currentweather.utils.LogHelper - 3. Get the response status code
+<br/>
+<br/>
+11:30:57.974 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response status code is 200
+<br/>
+<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.currentweather.api.TC_API_0002_Get_current_weather_data_with_INVALID_CityName@3d921e20</td></tr>
+<tr>
+<td title='com.currentweather.api.TC_API_0002_Get_current_weather_data_with_INVALID_CityName.TC_API_0002_Get_current_weather_data_with_INVALID_CityName()'><b>TC_API_0002_Get_current_weather_data_with_INVALID_CityName</b><br>Test class: com.currentweather.api.TC_API_0002_Get_current_weather_data_with_INVALID_CityName<br>Parameters: {InvalidCityName=12#!@$}<br/>
+<a href="#Output-883735648" onClick='toggleBox("Output-883735648", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-883735648" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-883735648">
+11:30:57.977 [main] INFO  com.currentweather.utils.LogHelper - 1. Send Get request to the server with city = 12#!@$
+<br/>
+<br/>
+11:30:58.074 [main] INFO  com.currentweather.utils.LogHelper - 2. Get content type of api
+<br/>
+<br/>
+11:30:58.074 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify content type is default JSON 
+<br/>
+<br/>
+11:30:58.074 [main] INFO  com.currentweather.utils.LogHelper - 3. Get the response status code
+<br/>
+<br/>
+11:30:58.074 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response status code is 200
+<br/>
+<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.currentweather.api.TC_API_0002_Get_current_weather_data_with_INVALID_CityName@3d921e20</td></tr>
+<tr>
+<td title='com.currentweather.api.TC_API_0002_Get_current_weather_data_with_INVALID_CityName.TC_API_0002_Get_current_weather_data_with_INVALID_CityName()'><b>TC_API_0002_Get_current_weather_data_with_INVALID_CityName</b><br>Test class: com.currentweather.api.TC_API_0002_Get_current_weather_data_with_INVALID_CityName<br>Parameters: {InvalidCityName=Lodon@gmail.com}<br/>
+<a href="#Output-538132628" onClick='toggleBox("Output-538132628", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-538132628" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-538132628">
+11:30:58.075 [main] INFO  com.currentweather.utils.LogHelper - 1. Send Get request to the server with city = Lodon@gmail.com
+<br/>
+<br/>
+11:30:58.242 [main] INFO  com.currentweather.utils.LogHelper - 2. Get content type of api
+<br/>
+<br/>
+11:30:58.243 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify content type is default JSON 
+<br/>
+<br/>
+11:30:58.244 [main] INFO  com.currentweather.utils.LogHelper - 3. Get the response status code
+<br/>
+<br/>
+11:30:58.245 [main] INFO  com.currentweather.utils.LogHelper - *Validation Point*: Verify response status code is 200
+<br/>
+<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.currentweather.api.TC_API_0002_Get_current_weather_data_with_INVALID_CityName@3d921e20</td></tr>
+</table><p>
+</body>
+</html>

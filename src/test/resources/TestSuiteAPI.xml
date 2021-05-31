@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All API Test Suite">
+    <test name="Get current data for one location by City Name">
+        <classes>
+            <class name="com.currentweather.api.TC_API_0001_Get_current_weather_data_with_VALID_CityName"/>
+            <class name="com.currentweather.api.TC_API_0002_Get_current_weather_data_with_INVALID_CityName"/>
+        </classes>
+    </test>
+    <test name="Get current data for one location by City Name and State Code">
+        <classes>
+            <class name="com.currentweather.api.TC_API_0003_Get_current_weather_data_with_VALID_CityName_and_StateCode"/>
+            <class name="com.currentweather.api.TC_API_0004_Get_current_weather_data_with_INVALID_CityName_and_StateCode"/>
+        </classes>
+    </test>
+    <test name="Get current data for one location by City Name, State Code and Country Code">
+        <classes>
+            <class name="com.currentweather.api.TC_API_0005_Get_current_weather_data_with_VALID_CityName_and_StateCode_and_CountryCode"/>
+            <class name="com.currentweather.api.TC_API_0006_Get_current_weather_data_with_INVALID_CityName_and_StateCode_and_CountryCode"/>
+        </classes>
+    </test>
+</suite>

@@ -47,7 +47,7 @@ Framework Architecture
 		|       
 		|_src/test/
 		|   |_java
-		|   |   |_com/currentweather/api
+		|      |_com/currentweather/api
     	|	|      |_api test script.class
 		|	|_resources
     	|		|_data

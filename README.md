@@ -52,7 +52,7 @@ Framework Architecture
 		|	|_resources
     	|		|_data
     	|		|  |_TestData.json  
-    	|		|testdata.api.weather
+    	|		|testdata/api/weather
     	|		|  |_Testdata.xlsx
     	|       |_TesSuieAPI.xml
 

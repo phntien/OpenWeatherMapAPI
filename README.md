@@ -1,6 +1,6 @@
 NAB - VDC: TEST FOR OPEN WEATHER MAP API
 ==============
--------------- Java - Selenium - Rest Assured - TestNG - Maven - POM -------------
+-------------- Java - Rest Assured - JUnit - TestNG - Maven - POM -------------
 
 Prerequisite
 --------------
